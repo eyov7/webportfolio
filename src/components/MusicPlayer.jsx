@@ -1,8 +1,7 @@
 import React from 'react';
 
 const MusicPlayer = () => {
-  // Replace this URL with your actual SoundCloud playlist or track URL
-  const soundcloudUrl = "https://soundcloud.com/your-username/sets/your-playlist";
+  const soundcloudUrl = "https://on.soundcloud.com/QLzWTvL12dNFVLY69";
 
   return (
     <div className="bg-white p-4 rounded shadow">
