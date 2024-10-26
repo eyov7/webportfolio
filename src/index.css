@@ -2,14 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'Courier New', monospace;
-  @apply bg-gray-100 text-gray-900;
-  margin: 0;
-  padding: 0;
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-purple-100 to-pink-100 min-h-screen font-mono text-gray-800;
+  }
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  @apply max-w-6xl mx-auto px-4;
 }

@@ -17,15 +17,17 @@ const MusicPlayer = () => {
   ];
 
   return (
-    <div className="p-4">
+    <div className="space-y-6">
       {tracks.map((track, index) => (
-        <div key={index} className="mb-4">
+        <div key={index} className="bg-white/50 rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
+          <h3 className="text-lg font-semibold mb-3 text-gray-800">{track.title}</h3>
           <iframe
             width="100%"
             height="166"
             scrolling="no"
             frameBorder="no"
             allow="autoplay"
+            className="rounded-md"
             src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(track.url)}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true`}
           ></iframe>
         </div>
