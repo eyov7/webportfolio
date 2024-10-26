@@ -21,6 +21,10 @@ body {
   line-height: 1.8;
 }
 
+.font-verdana {
+  font-family: 'Verdana', 'Geneva', sans-serif;
+}
+
 .wrapper {
   max-width: 1000px;
   margin: 0 auto;
