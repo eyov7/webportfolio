@@ -1,0 +1,42 @@
+.site-title-alt {
+  position: relative;
+  font-family: 'Verdana', 'Arial', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  white-space: nowrap;
+  border: 2px solid var(--darkblue);
+  padding: 5px 11px 3px 11px;
+  color: var(--darkblue);
+}
+
+.site-title-alt:before, 
+.site-title-alt:after {
+  background-color: var(--darkblue);
+  position: absolute;
+  content: '';
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  bottom: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.site-title-alt:before {
+  left: -20px;
+}
+
+.site-title-alt:after {
+  right: -20px;
+}
+
+@media (max-width: 768px) {
+  .site-title-alt {
+    font-size: 1.5em;
+    width: 150px;
+  }
+}

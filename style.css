@@ -1,3 +1,5 @@
+@import url('./src/styles/headings.css');
+
 :root {
   --lightblue: rgb(210,219,221);
   --lightpurple: rgb(215,190,210);
