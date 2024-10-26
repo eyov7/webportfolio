@@ -1,40 +1,46 @@
 import React from 'react';
-import Header from '../components/Header';
-import MusicPlayer from '../components/MusicPlayer';
-import BlogPosts from '../components/BlogPosts';
-import Projects from '../components/Projects';
-import ProjectNotes from '../components/ProjectNotes';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Header />
-      <main className="container mx-auto px-4 py-8 space-y-8">
-        <section>
-          <h2 className="text-3xl font-bold mb-6">Latest Music</h2>
-          <MusicPlayer />
-        </section>
-        
-        <section>
-          <h2 className="text-3xl font-bold mb-6">Project Notes</h2>
-          <ProjectNotes />
-        </section>
-        
-        <section>
-          <h2 className="text-3xl font-bold mb-6">Blog Posts</h2>
-          <BlogPosts />
-        </section>
-        
-        <section>
-          <h2 className="text-3xl font-bold mb-6">Projects</h2>
-          <Projects />
-        </section>
-      </main>
-      <footer className="bg-gray-900 text-white py-6 mt-12">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2024 4ever20. All rights reserved.</p>
+    <div className="wrapper">
+      <div className="box-alt">
+        <div className="test">
+          <h3>navigation</h3>
         </div>
-      </footer>
+        <nav>
+          <ul>
+            <li><Link to="/">home</Link></li>
+            <li><Link to="/about">about</Link></li>
+            <li><Link to="/projects">projects</Link></li>
+            <li><Link to="/blog">blog</Link></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div className="box-alt">
+        <div className="test">
+          <h3>about</h3>
+        </div>
+        <div className="blog-box">
+          <br />
+          <b>welcome</b>
+          <br />
+          i'm jo, currently a master's student in data science. this site is a work in progress as i'm still figuring out what i want to document and share on here. thanks for dropping by!
+          <br />
+          <br />
+        </div>
+        <div className="content-box">
+          <iframe
+            width="100%"
+            height="166"
+            scrolling="no"
+            frameBorder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/eyov5/a-whole-lotta-gremlin-draft&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 };
