@@ -1,12 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import '../style.css'
-import './styles/social.css'
-import './styles/animated-header.css'
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import TrackList from './components/TrackList';
+import '../style.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+const trackListContainer = document.getElementById('track-list');
+if (trackListContainer) {
+  const root = createRoot(trackListContainer);
+  root.render(
+    <React.StrictMode>
+      <TrackList />
+    </React.StrictMode>
+  );
+}
