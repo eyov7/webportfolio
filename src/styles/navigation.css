@@ -4,9 +4,11 @@
   width: auto;
   height: 90px;
   margin: 20px auto;
-  background: #fff;
+  background: rgba(205,203,212,0.4);
   border-radius: 5px;
   box-shadow: 0 10px 35px rgba(0,0,0,0.2);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   max-width: 600px;
 }
 
@@ -46,7 +48,7 @@
   vertical-align: top;
   width: 70px;
   text-align: center;
-  color: #6C7784;
+  color: #4f7396;
   font-size: 14px;
   line-height: 90px;
   font-family: Helvetica, Arial, sans-serif;
@@ -54,10 +56,12 @@
   perspective: 1000px;
   transition: color 0.3s;
   cursor: pointer;
+  text-shadow: 0 0 10px rgba(79, 115, 150, 0.5);
 }
 
 .nav-item:hover {
-  color: #4f7396;
+  color: #096DD3;
+  text-shadow: 0 0 15px rgba(9, 109, 211, 0.7);
 }
 
 .nav-item-text {
