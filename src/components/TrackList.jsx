@@ -22,13 +22,13 @@ const TrackList = () => {
   ];
 
   return (
-    <div className="grid gap-4">
+    <div className="grid gap-4 p-4">
       {tracks.map((track, index) => (
-        <Card key={index} className="bg-white/80 backdrop-blur-sm hover:bg-white/90 transition-all">
-          <CardHeader>
-            <CardTitle className="text-lg font-semibold text-darkblue">{track.title}</CardTitle>
+        <Card key={index} className="w-full bg-white shadow-lg rounded-lg overflow-hidden">
+          <CardHeader className="bg-gray-50">
+            <CardTitle className="text-lg font-semibold text-gray-800">{track.title}</CardTitle>
           </CardHeader>
-          <CardContent>
+          <CardContent className="p-4">
             <iframe
               width="100%"
               height="166"
@@ -36,6 +36,7 @@ const TrackList = () => {
               frameBorder="no"
               allow="autoplay"
               src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(track.url)}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true`}
+              title={track.title}
             ></iframe>
           </CardContent>
         </Card>
