@@ -90,6 +90,14 @@ h3 {
   margin: 10px;
 }
 
+.content-box {
+  margin: 10px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 6px #9999 inset;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -124,12 +132,4 @@ nav ul li a {
 nav ul li a:hover {
   background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.2) 100%);
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
-}
-
-.content-box {
-  margin: 10px;
-  padding: 10px;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 6px #9999 inset;
 }

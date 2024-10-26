@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MusicPlayer from '../components/MusicPlayer';
 
 const Index = () => {
   return (
@@ -31,14 +32,7 @@ const Index = () => {
           <br />
         </div>
         <div className="content-box">
-          <iframe
-            width="100%"
-            height="166"
-            scrolling="no"
-            frameBorder="no"
-            allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/eyov5/a-whole-lotta-gremlin-draft&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-          ></iframe>
+          <MusicPlayer />
         </div>
       </div>
     </div>
