@@ -12,14 +12,28 @@
     <header>
       <h1 class="site-title-alt">4ever20</h1>
     </header>
-    <nav>
-      <ul class="flex flex-wrap justify-center gap-2 p-2">
-        <li><a href="#home" class="block w-full sm:w-auto text-center">Home</a></li>
-        <li><a href="#about" class="block w-full sm:w-auto text-center">About</a></li>
-        <li><a href="#music" class="block w-full sm:w-auto text-center">Music</a></li>
-        <li><a href="#resume" class="block w-full sm:w-auto text-center">Resume</a></li>
-        <li><a href="#contact" class="block w-full sm:w-auto text-center">Contact</a></li>
-      </ul>
+    <nav class="custom-nav">
+      <input type="checkbox" class="nav-checkbox" id="menu-cb"/>
+      <div class="nav-content">
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="#home" class="nav-item-text">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-item-text">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#music" class="nav-item-text">Music</a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume" class="nav-item-text">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-item-text">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <label class="nav-btn" for="menu-cb"></label>
     </nav>
     <section id="about" class="box">
       <h2 class="text-shadow-glow text-2xl sm:text-3xl mb-4">Welcome to 4ever20</h2>
