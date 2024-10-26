@@ -2,16 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Gau';
-  src: url('https://joooo.neocities.org/fonts/GAU.TTF') format('truetype');
-}
-
-@font-face {
-  font-family: 'Nuvo';
-  src: url('https://joooo.neocities.org/fonts/nuvo.ttf') format('truetype');
-}
-
 :root {
   --lightblue: rgb(210,219,221);
   --creme: rgb(255,254,233);
@@ -19,7 +9,7 @@
 }
 
 body {
-  font-family: 'MS PGothic', 'Osaka', sans-serif;
+  font-family: 'Courier New', monospace;
   background: #e7c4d8 url('/bg.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,7 +52,7 @@ body {
 }
 
 h3 {
-  font-family: 'Gau';
+  font-family: 'Courier New', monospace;
   font-size: 16px;
   font-weight: bold;
   margin: auto 10px;
@@ -76,7 +66,7 @@ h3 {
   border-radius: 5px;
   box-shadow: 0 0 6px #9999 inset;
   border: #d0ced6 solid 2px;
-  font-family: 'nuvo';
+  font-family: monospace;
   font-size: 10px;
   color: #2F3A3F;
   line-height: 1.8;
@@ -97,7 +87,7 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   color: #F9F9FF;
-  font-family: 'Gau', sans-serif;
+  font-family: 'Courier New', monospace;
   font-size: 12px;
   font-weight: bold;
   height: 25px;
