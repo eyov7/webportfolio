@@ -1,40 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 import MusicPlayer from '../components/MusicPlayer';
+import BlogPosts from '../components/BlogPosts';
+import Projects from '../components/Projects';
 
 const Index = () => {
   return (
-    <div className="wrapper">
-      <div className="box-alt">
-        <div className="test">
-          <h3>navigation</h3>
-        </div>
-        <nav>
-          <ul>
-            <li><Link to="/">home</Link></li>
-            <li><Link to="/about">about</Link></li>
-            <li><Link to="/projects">projects</Link></li>
-            <li><Link to="/blog">blog</Link></li>
-          </ul>
-        </nav>
-      </div>
-      
-      <div className="box-alt">
-        <div className="test">
-          <h3>about</h3>
-        </div>
-        <div className="blog-box">
-          <br />
-          <b>welcome</b>
-          <br />
-          i'm jo, currently a master's student in data science. this site is a work in progress as i'm still figuring out what i want to document and share on here. thanks for dropping by!
-          <br />
-          <br />
-        </div>
-        <div className="content-box">
+    <div className="min-h-screen bg-gray-100 text-gray-900 font-mono">
+      <Header />
+      <main className="container mx-auto px-4 py-8">
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Latest Music</h2>
           <MusicPlayer />
-        </div>
-      </div>
+        </section>
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Blog Posts</h2>
+          <BlogPosts />
+        </section>
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Projects</h2>
+          <Projects />
+        </section>
+      </main>
     </div>
   );
 };
