@@ -12,7 +12,6 @@ const Header = () => {
           <nav>
             <ul className="flex items-center space-x-8">
               <li><Link to="/" className="text-indigo-600 hover:text-indigo-500 transition-colors">Home</Link></li>
-              <li><Link to="/music" className="text-indigo-600 hover:text-indigo-500 transition-colors">Music</Link></li>
               <li><Link to="/blog" className="text-indigo-600 hover:text-indigo-500 transition-colors">Blog</Link></li>
               <li><Link to="/projects" className="text-indigo-600 hover:text-indigo-500 transition-colors">Projects</Link></li>
             </ul>
