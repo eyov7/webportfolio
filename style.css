@@ -32,12 +32,12 @@ body {
 /* Header */
 header {
   text-align: center;
-  background: rgba(224,222,238, 0.6);
+  background: rgba(224,222,238, 0.4);
   padding: 2em;
   border-radius: 5px;
   box-shadow: 0 0 40px 0 lightgray inset, 0 0 20px rgba(0,0,0,0.1);
   border: 1px solid #999999;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
 }
 
 header h1 {
@@ -53,10 +53,10 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 10px;
-  background: linear-gradient(to right, rgba(254,239,248,0.6), rgba(155,188,236,0.6), rgba(177,193,219,0.6), rgba(253,238,247,0.6));
+  background: linear-gradient(to right, rgba(254,239,248,0.4), rgba(155,188,236,0.4), rgba(177,193,219,0.4), rgba(253,238,247,0.4));
   padding: 1em;
   border-radius: 5px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
 }
 
 nav ul li a {
@@ -77,7 +77,7 @@ nav ul li a {
     0 1px 2px rgba(0,0,0,0.24),
     inset 0 1px 1px rgba(255,255,255,0.5),
     inset 0 -1px 1px rgba(0,0,0,0.1);
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
 }
 
 nav ul li a:hover {
@@ -87,14 +87,14 @@ nav ul li a:hover {
 
 /* Main Section */
 .box {
-  background: rgba(205,203,212,0.6);
+  background: rgba(205,203,212,0.4);
   padding: 2em;
   border-radius: 5px;
   box-shadow: 0 0 6px #9999 inset;
   border: #d0ced6 solid 2px;
   overflow: auto;
   max-height: 500px;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
 }
 
 .box::-webkit-scrollbar {
@@ -130,13 +130,13 @@ footer {
   padding: 1.5em;
   font-size: 0.9em;
   color: #24272b;
-  background: rgba(224,222,238, 0.6);
+  background: rgba(224,222,238, 0.4);
   border-top: 1px solid #999;
   border-radius: 5px;
   box-shadow: 
     inset 0px 1px 3px rgba(0, 0, 0, 0.2),
     0 0 40px 0 lightgray inset;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
 }
 
 /* Responsive Design */
