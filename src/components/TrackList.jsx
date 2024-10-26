@@ -12,7 +12,7 @@ const TrackList = () => {
       url: "https://soundcloud.com/eyov5/broken-club-draft",
     },
     {
-      title: "Less Cap",
+      title: "Less is More",
       url: "https://soundcloud.com/eyov5/less-cap-draft",
     },
     {
@@ -26,7 +26,7 @@ const TrackList = () => {
       {tracks.map((track, index) => (
         <Card key={index} className="w-full bg-white shadow-lg rounded-lg overflow-hidden">
           <CardHeader className="bg-gray-50">
-            <CardTitle className="text-lg font-semibold text-gray-800">{track.title}</CardTitle>
+            <CardTitle className="text-lg font-semibold text-gray-800 text-shadow-glow">{track.title}</CardTitle>
           </CardHeader>
           <CardContent className="p-4">
             <iframe
