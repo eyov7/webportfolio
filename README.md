@@ -1,18 +1,28 @@
-# 4ever20 Personal Music Portfolio
+# Personal Portfolio
 
-Welcome to my personal music portfolio! This is a simple website showcasing my latest music tracks and drafts.
+Welcome to my personal portfolio! This website showcases my music projects and professional work.
 
-## About
-This website features my SoundCloud tracks, including:
+## Content
+This site features:
+- My latest SoundCloud tracks and music projects
+- LANL Risk Modeling Project notes and documentation
+- Blog posts
+- Other projects and work
+
+## Music Tracks
+Current featured tracks include:
 - A Whole Lotta Gremlin (Draft)
 - Less Cap (Draft)
 - Broken Club (Draft)
 
-## Technology
-This site is built with pure HTML5, CSS, and JavaScript for simplicity and easy maintenance.
+## Project Notes
+Includes detailed documentation and notes from the LANL Risk Modeling Project, covering:
+- Risk Assessment Framework
+- Implementation Strategy
+- Key Findings and Outcomes
 
-## Deployment
-The site is deployed using GitHub Pages and can be accessed at your GitHub Pages URL.
+## Technology
+This site is built with React, Tailwind CSS, and various modern web technologies for optimal performance and user experience.
 
 ## Contact
 You can find more of my music on [SoundCloud](https://soundcloud.com/eyov5).
