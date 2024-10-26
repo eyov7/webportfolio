@@ -30,19 +30,23 @@ body {
 
 header {
   text-align: center;
-  background: rgba(224,222,238, 0.4);
-  padding: 2em;
+  background: rgba(224,222,238, 0.6);
+  padding: 1em;
   border-radius: 5px;
-  box-shadow: 0 0 40px 0 lightgray inset, 0 0 20px rgba(0,0,0,0.1);
-  border: 1px solid #999999;
+  box-shadow: 0 0 40px 0 rgba(183, 175, 230, 0.5) inset, 0 0 20px rgba(0,0,0,0.1);
+  border: 1px solid rgba(153, 153, 153, 0.5);
   backdrop-filter: blur(12px);
 }
 
 .site-logo {
-  max-width: 100%;
+  max-width: 300px;
   height: auto;
   display: block;
   margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(183, 175, 230, 0.3);
 }
 
 nav ul {
