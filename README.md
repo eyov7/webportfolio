@@ -53,9 +53,6 @@ npm i
 npm run dev
 ```
 
-### Deployment
-Visit [GPT Engineer](https://gptengineer.app/projects/5c4bf967-3da8-4d65-931b-e54b60ee4a67/improve) and click on Share -> Publish to deploy.
-
 ## Contact
 Feel free to reach out through:
 - GitHub: [eyov7](https://github.com/eyov7)
