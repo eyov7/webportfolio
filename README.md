@@ -1,70 +1,63 @@
-# Welcome to your GPT Engineer project
+# 4ever20 - Personal Portfolio & Projects
 
-## Project info
+## About Me
+I'm a Machine Learning and AI graduate student with a background in Applied Mathematics. This portfolio showcases both my technical projects and musical endeavors, reflecting my passion for combining technology with creativity.
 
-**URL**: https://run.gptengineer.app/projects/5c4bf967-3da8-4d65-931b-e54b60ee4a67/improve
+## Current Projects & Interests
 
-## How can I edit this code?
+### 1. Savings App Prototype
+Currently developing a prototype for a personal finance application focused on savings optimization and budget tracking. This project aims to make financial planning more accessible and intuitive.
 
-There are several ways of editing your application.
+### 2. Open Source Music Citation Standard
+Working on establishing an open-source standard for music citations, addressing the need for consistent attribution in digital music sharing and academic contexts. This initiative aims to bridge the gap between academic rigor and musical creativity.
 
-**Use GPT Engineer**
+### 3. Boba Business Web/Mobile Development
+Actively learning web and mobile app development to support my brother's boba (bubble tea) business. This practical application of technology includes:
+- Customer ordering systems
+- Inventory management
+- Digital menu solutions
 
-Simply visit the GPT Engineer project at [GPT Engineer](https://gptengineer.app/projects/5c4bf967-3da8-4d65-931b-e54b60ee4a67/improve) and start prompting.
+## Portfolio Contents
 
-Changes made via gptengineer.app will be committed automatically to this repo.
+### Music Production
+- Showcase of original tracks and remixes
+- Production techniques using Ableton and Logic Pro
+- House music and reggaeton productions
 
-**Use your preferred IDE**
+### Technical Skills
+- Machine Learning & AI
+- Applied Mathematics
+- Full-stack Development
+- Audio Engineering
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in the GPT Engineer UI.
+## Getting Started with This Project
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
+This project is built with:
 - Vite
 - React
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+### Local Development
+```sh
+# Clone the repository
+git clone <YOUR_GIT_URL>
 
-All GPT Engineer projects can be deployed directly via the GPT Engineer app.
+# Navigate to project directory
+cd <YOUR_PROJECT_NAME>
 
-Simply visit your project at [GPT Engineer](https://gptengineer.app/projects/5c4bf967-3da8-4d65-931b-e54b60ee4a67/improve) and click on Share -> Publish.
+# Install dependencies
+npm i
 
-## I want to use a custom domain - is that possible?
+# Start development server
+npm run dev
+```
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.gptengineer.app/tips-tricks/custom-domain/)
+### Deployment
+Visit [GPT Engineer](https://gptengineer.app/projects/5c4bf967-3da8-4d65-931b-e54b60ee4a67/improve) and click on Share -> Publish to deploy.
+
+## Contact
+Feel free to reach out through:
+- GitHub: [eyov7](https://github.com/eyov7)
+- LinkedIn: [Ever Olivares](https://www.linkedin.com/in/everolivares/)
+- SoundCloud: [eyov5](https://soundcloud.com/eyov5)
