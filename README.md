@@ -30,29 +30,6 @@ Actively learning web and mobile app development to support my brother's boba (b
 - Full-stack Development
 - Audio Engineering
 
-## Getting Started with This Project
-
-This project is built with:
-- Vite
-- React
-- shadcn-ui
-- Tailwind CSS
-
-### Local Development
-```sh
-# Clone the repository
-git clone <YOUR_GIT_URL>
-
-# Navigate to project directory
-cd <YOUR_PROJECT_NAME>
-
-# Install dependencies
-npm i
-
-# Start development server
-npm run dev
-```
-
 ## Contact
 Feel free to reach out through:
 - GitHub: [eyov7](https://github.com/eyov7)
