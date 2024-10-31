@@ -42,7 +42,7 @@
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-lg font-semibold">Video Presentation</AccordionTrigger>
             <AccordionContent>
-              <div className="p-4 bg-white/10 rounded-lg">
+              <div class="p-4 bg-white/10 rounded-lg">
                 <iframe
                   src="https://drive.google.com/file/d/1EBDUrAf-_9vkd78ckQznH-EXS4wnqpR1/preview"
                   width="100%"
@@ -57,7 +57,7 @@
           <AccordionItem value="item-2">
             <AccordionTrigger className="text-lg font-semibold">Literature Review Slides</AccordionTrigger>
             <AccordionContent>
-              <div className="p-4 bg-white/10 rounded-lg">
+              <div class="p-4 bg-white/10 rounded-lg">
                 <iframe
                   src="https://docs.google.com/presentation/d/1wc6EHC_ufz7UDcC2w9fDudTtzXiwO4S0VUHWYaUqlx0/embed?start=false&loop=false&delayms=3000"
                   width="100%"
@@ -74,7 +74,7 @@
           <AccordionItem value="item-3">
             <AccordionTrigger className="text-lg font-semibold">Additional Research Presentation 1</AccordionTrigger>
             <AccordionContent>
-              <div className="p-4 bg-white/10 rounded-lg">
+              <div class="p-4 bg-white/10 rounded-lg">
                 <iframe
                   src="https://drive.google.com/file/d/15Cy67bJUltmxy1GBtzsCv2FKjsfdUC4d/preview"
                   width="100%"
@@ -89,7 +89,7 @@
           <AccordionItem value="item-4">
             <AccordionTrigger className="text-lg font-semibold">Additional Research Presentation 2</AccordionTrigger>
             <AccordionContent>
-              <div className="p-4 bg-white/10 rounded-lg">
+              <div class="p-4 bg-white/10 rounded-lg">
                 <iframe
                   src="https://drive.google.com/file/d/1HF29uvqvu6HUlMUfqqCxx7J3t5hFW1BQ/preview"
                   width="100%"
@@ -109,17 +109,17 @@
       <section id="resume" class="box">
         <h2 class="text-shadow-glow">My Resume</h2>
         <div class="pdf-container">
-          <object
-            data="/OctResume2024.docx.pdf"
-            type="application/pdf"
+          <iframe
+            src="./OctResume2024.docx.pdf"
             width="100%"
             height="600px"
+            style="border: none;"
           >
-            <p>Unable to display PDF file. <a href="/OctResume2024.docx.pdf" target="_blank" class="text-white">Download Instead</a></p>
-          </object>
+            <p>Unable to display PDF file. <a href="./OctResume2024.docx.pdf" target="_blank" class="text-white">Download Instead</a></p>
+          </iframe>
         </div>
         <div id="resume-download" class="flex justify-center items-center p-4">
-          <a href="/OctResume2024.docx.pdf" target="_blank" class="resume-button text-white hover:text-white">
+          <a href="./OctResume2024.docx.pdf" target="_blank" class="resume-button text-white hover:text-white">
             Download Resume
           </a>
         </div>

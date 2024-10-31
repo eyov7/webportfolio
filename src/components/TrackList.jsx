@@ -29,15 +29,17 @@ const TrackList = () => {
             <CardTitle className="text-lg font-bold text-black text-shadow-glow">{track.title}</CardTitle>
           </CardHeader>
           <CardContent className="p-4">
-            <iframe
-              width="100%"
-              height="166"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(track.url)}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true`}
-              title={track.title}
-            ></iframe>
+            <div className="w-full">
+              <iframe
+                width="100%"
+                height="166"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(track.url)}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false`}
+                title={track.title}
+              ></iframe>
+            </div>
           </CardContent>
         </Card>
       ))}
