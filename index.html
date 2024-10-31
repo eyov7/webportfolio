@@ -27,6 +27,7 @@
         </a>
       </div>
     </header>
+    
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -37,137 +38,165 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <section id="about" class="box">
-      <h2 class="text-shadow-glow">Welcome to 4ever20</h2>
-      
-      <ul class="list-disc pl-6 space-y-6 font-verdana text-xl text-black text-shadow-glow">
-        <li>Hi! I'm currently pursuing my master's degree in Machine Learning and AI, exploring the intersection of technology and creativity. This space is where I share my musical journey alongside my academic pursuits. With a strong foundation in Applied Mathematics, focusing on Science and Engineering, I've developed the technical expertise needed for the AI industry. This background complements my current studies in artificial intelligence perfectly.</li>
-        
-        <li>On the musical side, I'm diving deep into house music arrangement while building upon my experience in reggaeton production. You'll find me crafting beats in either Ableton or Logic Pro, my go-to Digital Audio Workstations.</li>
-      </ul>
-      
-      <div class="video-container">
-        <iframe
-          width="100%"
-          height="315"
-          src="https://www.youtube.com/embed/wawMjJUCMVw?start=28&end=88"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section>
-    
-    <section id="ai-ml" class="box">
-      <h2 class="text-shadow-glow mb-6">AI/ML Research Work</h2>
-      <Accordion type="single" collapsible defaultValue="item-1">
-        <AccordionItem value="item-1">
-          <AccordionTrigger className="text-lg font-semibold">Video Presentation</AccordionTrigger>
-          <AccordionContent>
-            <div className="p-4 bg-white/10 rounded-lg">
+
+    <Accordion type="single" collapsible defaultValue="about">
+      <AccordionItem value="about">
+        <AccordionTrigger className="text-2xl font-semibold mb-4">Welcome to 4ever20</AccordionTrigger>
+        <AccordionContent>
+          <section id="about" class="box">
+            <h2 class="text-shadow-glow">Welcome to 4ever20</h2>
+            
+            <ul class="list-disc pl-6 space-y-6 font-verdana text-xl text-black text-shadow-glow">
+              <li>Hi! I'm currently pursuing my master's degree in Machine Learning and AI, exploring the intersection of technology and creativity. This space is where I share my musical journey alongside my academic pursuits. With a strong foundation in Applied Mathematics, focusing on Science and Engineering, I've developed the technical expertise needed for the AI industry. This background complements my current studies in artificial intelligence perfectly.</li>
+              
+              <li>On the musical side, I'm diving deep into house music arrangement while building upon my experience in reggaeton production. You'll find me crafting beats in either Ableton or Logic Pro, my go-to Digital Audio Workstations.</li>
+            </ul>
+            
+            <div class="video-container">
               <iframe
-                src="https://drive.google.com/file/d/1EBDUrAf-_9vkd78ckQznH-EXS4wnqpR1/preview"
                 width="100%"
-                height="400"
-                allow="autoplay"
-                className="rounded-md"
+                height="315"
+                src="https://www.youtube.com/embed/wawMjJUCMVw?start=28&end=88"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
               ></iframe>
             </div>
-          </AccordionContent>
-        </AccordionItem>
+          </section>
+        </AccordionContent>
+      </AccordionItem>
 
-        <AccordionItem value="item-2">
-          <AccordionTrigger className="text-lg font-semibold">Literature Review Slides</AccordionTrigger>
-          <AccordionContent>
-            <div className="p-4 bg-white/10 rounded-lg">
-              <iframe
-                src="https://docs.google.com/presentation/d/1wc6EHC_ufz7UDcC2w9fDudTtzXiwO4S0VUHWYaUqlx0/embed?start=false&loop=false&delayms=3000"
+      <AccordionItem value="ai-ml">
+        <AccordionTrigger className="text-2xl font-semibold mb-4">AI/ML Research Work</AccordionTrigger>
+        <AccordionContent>
+          <section id="ai-ml" class="box">
+            <h2 class="text-shadow-glow mb-6">AI/ML Research Work</h2>
+            <Accordion type="single" collapsible defaultValue="item-1">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-lg font-semibold">Video Presentation</AccordionTrigger>
+                <AccordionContent>
+                  <div className="p-4 bg-white/10 rounded-lg">
+                    <iframe
+                      src="https://drive.google.com/file/d/1EBDUrAf-_9vkd78ckQznH-EXS4wnqpR1/preview"
+                      width="100%"
+                      height="400"
+                      allow="autoplay"
+                      className="rounded-md"
+                    ></iframe>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-lg font-semibold">Literature Review Slides</AccordionTrigger>
+                <AccordionContent>
+                  <div className="p-4 bg-white/10 rounded-lg">
+                    <iframe
+                      src="https://docs.google.com/presentation/d/1wc6EHC_ufz7UDcC2w9fDudTtzXiwO4S0VUHWYaUqlx0/embed?start=false&loop=false&delayms=3000"
+                      width="100%"
+                      height="400"
+                      allowFullScreen={true}
+                      mozallowfullscreen="true"
+                      webkitallowfullscreen="true"
+                      className="rounded-md"
+                    ></iframe>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-lg font-semibold">Additional Research Presentation 1</AccordionTrigger>
+                <AccordionContent>
+                  <div className="p-4 bg-white/10 rounded-lg">
+                    <iframe
+                      src="https://drive.google.com/file/d/15Cy67bJUltmxy1GBtzsCv2FKjsfdUC4d/preview"
+                      width="100%"
+                      height="400"
+                      allow="autoplay"
+                      className="rounded-md"
+                    ></iframe>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-lg font-semibold">Additional Research Presentation 2</AccordionTrigger>
+                <AccordionContent>
+                  <div className="p-4 bg-white/10 rounded-lg">
+                    <iframe
+                      src="https://drive.google.com/file/d/1HF29uvqvu6HUlMUfqqCxx7J3t5hFW1BQ/preview"
+                      width="100%"
+                      height="400"
+                      allow="autoplay"
+                      className="rounded-md"
+                    ></iframe>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </section>
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem value="resume">
+        <AccordionTrigger className="text-2xl font-semibold mb-4">My Resume</AccordionTrigger>
+        <AccordionContent>
+          <section id="resume" class="box">
+            <h2 class="text-shadow-glow">My Resume</h2>
+            <div class="pdf-container">
+              <object
+                data="/OctResume2024.docx.pdf"
+                type="application/pdf"
                 width="100%"
-                height="400"
-                allowFullScreen={true}
-                mozallowfullscreen="true"
-                webkitallowfullscreen="true"
-                className="rounded-md"
-              ></iframe>
+                height="600px"
+              >
+                <p>Unable to display PDF file. <a href="/OctResume2024.docx.pdf" target="_blank" class="resume-button">Download Instead</a></p>
+              </object>
             </div>
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-3">
-          <AccordionTrigger className="text-lg font-semibold">Additional Research Presentation 1</AccordionTrigger>
-          <AccordionContent>
-            <div className="p-4 bg-white/10 rounded-lg">
-              <iframe
-                src="https://drive.google.com/file/d/15Cy67bJUltmxy1GBtzsCv2FKjsfdUC4d/preview"
-                width="100%"
-                height="400"
-                allow="autoplay"
-                className="rounded-md"
-              ></iframe>
+            <div id="resume-download" class="flex justify-center items-center p-4">
+              <a href="/OctResume2024.docx.pdf" target="_blank" class="resume-button">
+                Download Resume
+              </a>
             </div>
-          </AccordionContent>
-        </AccordionItem>
+          </section>
+        </AccordionContent>
+      </AccordionItem>
 
-        <AccordionItem value="item-4">
-          <AccordionTrigger className="text-lg font-semibold">Additional Research Presentation 2</AccordionTrigger>
-          <AccordionContent>
-            <div className="p-4 bg-white/10 rounded-lg">
-              <iframe
-                src="https://drive.google.com/file/d/1HF29uvqvu6HUlMUfqqCxx7J3t5hFW1BQ/preview"
-                width="100%"
-                height="400"
-                allow="autoplay"
-                className="rounded-md"
-              ></iframe>
+      <AccordionItem value="music">
+        <AccordionTrigger className="text-2xl font-semibold mb-4">Featured Tracks</AccordionTrigger>
+        <AccordionContent>
+          <section id="music" class="box">
+            <h2 class="text-shadow-glow">Featured Tracks</h2>
+            <div id="track-list" class="w-full"></div>
+          </section>
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem value="contact">
+        <AccordionTrigger className="text-2xl font-semibold mb-4">Get in Touch</AccordionTrigger>
+        <AccordionContent>
+          <section id="contact" class="box">
+            <h2 class="text-shadow-glow">Get in Touch</h2>
+            <p>Interested in collaborating on a data science project or music production? Feel free to reach out through any of my social media channels:</p>
+            <div class="social-links">
+              <a href="https://github.com/eyov7" target="_blank" rel="noopener noreferrer" class="social-link">
+                <img src="https://img.icons8.com/3d-fluency/94/github-logo.png" alt="GitHub" class="social-icon" />
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/everolivares/" target="_blank" rel="noopener noreferrer" class="social-link">
+                <img src="https://img.icons8.com/3d-plastilina/69/linkedin--v2.png" alt="LinkedIn" class="social-icon" />
+                LinkedIn
+              </a>
+              <a href="https://soundcloud.com/eyov5" target="_blank" rel="noopener noreferrer" class="social-link">
+                <img src="https://img.icons8.com/3d-fluency/94/soundcloud.png" alt="SoundCloud" class="social-icon" />
+                SoundCloud
+              </a>
             </div>
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
-    </section>
-
-    <section id="resume" class="box">
-      <h2 class="text-shadow-glow">My Resume</h2>
-      <div class="pdf-container">
-        <object
-          data="/OctResume2024.docx.pdf"
-          type="application/pdf"
-          width="100%"
-          height="600px"
-        >
-          <p>Unable to display PDF file. <a href="/OctResume2024.docx.pdf" target="_blank" class="resume-button">Download Instead</a></p>
-        </object>
-      </div>
-      <div id="resume-download" class="flex justify-center items-center p-4">
-        <a href="/OctResume2024.docx.pdf" target="_blank" class="resume-button">
-          Download Resume
-        </a>
-      </div>
-    </section>
-    
-    <section id="music" class="box">
-      <h2 class="text-shadow-glow">Featured Tracks</h2>
-      <div id="track-list" class="w-full"></div>
-    </section>
-    
-    <section id="contact" class="box">
-      <h2 class="text-shadow-glow">Get in Touch</h2>
-      <p>Interested in collaborating on a data science project or music production? Feel free to reach out through any of my social media channels:</p>
-      <div class="social-links">
-        <a href="https://github.com/eyov7" target="_blank" rel="noopener noreferrer" class="social-link">
-          <img src="https://img.icons8.com/3d-fluency/94/github-logo.png" alt="GitHub" class="social-icon" />
-          GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/everolivares/" target="_blank" rel="noopener noreferrer" class="social-link">
-          <img src="https://img.icons8.com/3d-plastilina/69/linkedin--v2.png" alt="LinkedIn" class="social-icon" />
-          LinkedIn
-        </a>
-        <a href="https://soundcloud.com/eyov5" target="_blank" rel="noopener noreferrer" class="social-link">
-          <img src="https://img.icons8.com/3d-fluency/94/soundcloud.png" alt="SoundCloud" class="social-icon" />
-          SoundCloud
-        </a>
-      </div>
-    </section>
+          </section>
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
     
     <footer>
       <p>&copy; 2024 4ever20 | Created with 💜</p>
