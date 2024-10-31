@@ -15,37 +15,40 @@ export default async function handler(req, res) {
     // Read the context file
     const contextPath = path.join(process.cwd(), 'src', 'data', 'ai-context.md');
     const contextContent = fs.readFileSync(contextPath, 'utf8');
+    
+    console.log('Using Groq Mixtral model');
+    console.log('Context length:', contextContent.length);
 
-    const context = `You are an AI assistant for Ever Olivares. You have access to his portfolio website content and should answer questions about his background, skills, and projects. Be professional but friendly. Here's detailed information about Ever:
+    const messages = [
+      {
+        role: "system",
+        content: `You are an AI assistant for Ever Olivares. Be professional but friendly. Use the following context to inform your responses:\n\n${contextContent}`
+      },
+      {
+        role: "user",
+        content: req.body.message
+      }
+    ];
 
-${contextContent}
-
-Current role: Machine Learning and AI graduate student
-Background: Applied Mathematics
-Key skills: Machine Learning, AI, Full-stack Development, Audio Engineering
-Projects: Working on savings app prototype, open source music citation standard, and boba business web/mobile development`;
-
+    console.log('Sending request to Groq API...');
     const chatCompletion = await groq.chat.completions.create({
-      messages: [
-        {
-          role: "system",
-          content: context,
-        },
-        {
-          role: "user",
-          content: req.body.message,
-        },
-      ],
+      messages,
       model: "mixtral-8x7b-32768",
       temperature: 0.7,
       max_tokens: 1000,
+      stream: false
     });
 
-    return res.status(200).json({ 
-      response: chatCompletion.choices[0].message.content 
-    });
+    console.log('Received response from Groq API');
+    const response = chatCompletion.choices[0].message.content;
+    console.log('Response length:', response.length);
+
+    return res.status(200).json({ response });
   } catch (error) {
-    console.error('Error:', error);
-    return res.status(500).json({ message: 'Internal server error' });
+    console.error('Error in chat handler:', error);
+    return res.status(500).json({ 
+      message: 'Internal server error',
+      error: error.message 
+    });
   }
 }

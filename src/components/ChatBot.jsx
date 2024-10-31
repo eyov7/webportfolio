@@ -20,6 +20,7 @@ const ChatBot = () => {
     setIsLoading(true);
 
     try {
+      console.log('Sending message:', input);
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: {
@@ -29,15 +30,22 @@ const ChatBot = () => {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to get response');
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       const data = await response.json();
+      console.log('Received response:', data);
+      
+      if (data.error) {
+        throw new Error(data.error);
+      }
+
       setMessages(prev => [...prev, { role: 'assistant', content: data.response }]);
     } catch (error) {
+      console.error('Chat error:', error);
       toast({
         title: "Error",
-        description: "Failed to get response from the chatbot",
+        description: error.message || "Failed to get response from the chatbot",
         variant: "destructive",
       });
     } finally {
@@ -83,7 +91,7 @@ const ChatBot = () => {
             className="border-primary/50 focus:border-primary text-black"
           />
           <Button type="submit" disabled={isLoading} className="border border-primary/20">
-            Send
+            {isLoading ? 'Sending...' : 'Send'}
           </Button>
         </form>
       </div>
