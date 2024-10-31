@@ -5,7 +5,11 @@ I'm a Machine Learning and AI graduate student with a background in Applied Math
 
 ## Website Contents
 
-### Current Projects
+### Main Projects
+1. Audio/Split/Midi ML Pipeline Development
+2. Los Alamos National Laboratory ADWP Project
+
+### Current Side Projects
 1. Savings App Prototype Development
 2. Open Source Music Citation Standard
 3. Boba Business Web/Mobile Development
