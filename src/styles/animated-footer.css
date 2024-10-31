@@ -1,8 +1,12 @@
 .animated-footer {
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 200px;
-  margin-top: 2rem;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  z-index: 10;
 }
 
 #wrap {
@@ -10,7 +14,7 @@
   height: 100%;
   position: relative;
   margin: 0 auto;
-  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #lightings {
@@ -23,11 +27,13 @@
   position: absolute;
   width: 100%;
   text-align: center;
-  top: -80px;
+  top: 50%;
+  transform: translateY(-50%);
   color: white;
   font-family: 'Verdana', 'Arial', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  z-index: 20;
 }
 
 section {
@@ -39,27 +45,27 @@ section {
 }
 
 #one {
-  animation: one 5s ease-in-out infinite alternate;
+  animation: one 8s ease-in-out infinite alternate;
 }
 
 #two {
   width: 90%;
-  animation: two 4s ease-in-out infinite alternate;
+  animation: two 7s ease-in-out infinite alternate;
 }
 
 #three {
   width: 80%;
-  animation: three 3s ease-in-out infinite alternate;
+  animation: three 6s ease-in-out infinite alternate;
 }
 
 #four {
   width: 70%;
-  animation: four 2s ease-in-out infinite alternate;
+  animation: four 5s ease-in-out infinite alternate;
 }
 
 #five {
   width: 60%;
-  animation: five 1s ease-in-out infinite alternate;
+  animation: five 4s ease-in-out infinite alternate;
 }
 
 @keyframes one {
