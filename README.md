@@ -5,9 +5,6 @@ I'm a Machine Learning and AI graduate student with a background in Applied Math
 
 ## Website Contents
 
-### Music Production
-House music and reggaeton productions available on SoundCloud, featuring tracks like "Vera Cruz" and "Broken Club".
-
 ### Current Projects
 1. Savings App Prototype Development
 2. Open Source Music Citation Standard
