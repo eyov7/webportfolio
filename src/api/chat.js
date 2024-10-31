@@ -1,4 +1,6 @@
 import Groq from "groq";
+import fs from 'fs';
+import path from 'path';
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -10,12 +12,18 @@ export default async function handler(req, res) {
       apiKey: process.env.GROQ_API_KEY,
     });
 
-    const context = `You are an AI assistant for Ever Olivares. You have access to his portfolio website content and should answer questions about his background, skills, and projects. Be professional but friendly. Here's some information about Ever:
-    
-    Current role: Machine Learning and AI graduate student
-    Background: Applied Mathematics
-    Key skills: Machine Learning, AI, Full-stack Development, Audio Engineering
-    Projects: Working on savings app prototype, open source music citation standard, and boba business web/mobile development`;
+    // Read the context file
+    const contextPath = path.join(process.cwd(), 'src', 'data', 'ai-context.md');
+    const contextContent = fs.readFileSync(contextPath, 'utf8');
+
+    const context = `You are an AI assistant for Ever Olivares. You have access to his portfolio website content and should answer questions about his background, skills, and projects. Be professional but friendly. Here's detailed information about Ever:
+
+${contextContent}
+
+Current role: Machine Learning and AI graduate student
+Background: Applied Mathematics
+Key skills: Machine Learning, AI, Full-stack Development, Audio Engineering
+Projects: Working on savings app prototype, open source music citation standard, and boba business web/mobile development`;
 
     const chatCompletion = await groq.chat.completions.create({
       messages: [
