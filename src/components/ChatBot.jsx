@@ -20,18 +20,13 @@ const ChatBot = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ message: input }),
-      });
-
-      if (!response.ok) throw new Error('Failed to get response');
+      // Mock response for development/preview
+      const mockResponse = {
+        role: 'assistant',
+        content: `This is a preview version of the chatbot. In production, I'll be able to answer questions about Ever's background in ML/AI, his projects, and his music production work!`
+      };
       
-      const data = await response.json();
-      setMessages(prev => [...prev, { role: 'assistant', content: data.response }]);
+      setMessages(prev => [...prev, mockResponse]);
     } catch (error) {
       toast({
         title: "Error",
@@ -46,7 +41,7 @@ const ChatBot = () => {
   return (
     <div className="fixed bottom-4 right-4 w-96 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border rounded-lg shadow-lg">
       <div className="p-4">
-        <h3 className="font-semibold mb-4">Ask me anything!</h3>
+        <h3 className="font-semibold mb-4">Ask me anything! (Preview Mode)</h3>
         <ScrollArea className="h-[300px] mb-4">
           <div className="space-y-4">
             {messages.map((message, i) => (
