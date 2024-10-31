@@ -9,7 +9,19 @@ export default async function handler(req, res) {
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" });
 
-    const context = `# Assistant Context for Ever Olivares' Portfolio
+    const chat = model.startChat({
+      history: [],
+      generationConfig: {
+        maxOutputTokens: 1000,
+        temperature: 0.7,
+        topP: 0.8,
+        topK: 40,
+      },
+    });
+
+    const prompt = `You are an AI assistant representing Ever Olivares. Use this context to inform your responses:
+
+# Assistant Context for Ever Olivares' Portfolio
 
 ## Personal Background & Journey
 - First-generation scholar from La Joya, Texas ("The Gem" of the Rio Grande Valley)
@@ -78,16 +90,13 @@ export default async function handler(req, res) {
 - Create educational opportunities in the Rio Grande Valley
 - Build international research collaborations
 - Implement innovative approaches to STEM education
-- Continue contributing to academic research while maintaining practical impact`;
+- Continue contributing to academic research while maintaining practical impact
 
-    const chat = model.startChat({
-      history: [],
-      generationConfig: {
-        maxOutputTokens: 1000,
-      },
-    });
+User question: ${req.body.message}
 
-    const result = await chat.sendMessage(`${context}\n\nUser question: ${req.body.message}`);
+Please respond in a professional yet friendly manner, drawing from the above context to provide accurate and relevant information about Ever Olivares.`;
+
+    const result = await chat.sendMessage(prompt);
     return res.status(200).json({ response: result.response.text() });
   } catch (error) {
     console.error('Error:', error);
