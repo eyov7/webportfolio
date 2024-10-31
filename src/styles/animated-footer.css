@@ -1,12 +1,9 @@
 .animated-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 200px;
-  overflow: hidden;
-  backdrop-filter: blur(10px);
-  z-index: 10;
+  margin-top: 2rem;
+  background: transparent;
 }
 
 #wrap {
@@ -14,7 +11,7 @@
   height: 100%;
   position: relative;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 #lightings {
@@ -27,13 +24,15 @@
   position: absolute;
   width: 100%;
   text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
+  top: -80px;
   color: white;
   font-family: 'Verdana', 'Arial', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  z-index: 20;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 8px;
 }
 
 section {
@@ -42,53 +41,54 @@ section {
   width: 100%;
   position: relative;
   margin: auto;
+  opacity: 0.8;
 }
 
 #one {
-  animation: one 8s ease-in-out infinite alternate;
+  animation: one 5s ease-in-out infinite alternate;
 }
 
 #two {
   width: 90%;
-  animation: two 7s ease-in-out infinite alternate;
+  animation: two 4s ease-in-out infinite alternate;
 }
 
 #three {
   width: 80%;
-  animation: three 6s ease-in-out infinite alternate;
+  animation: three 3s ease-in-out infinite alternate;
 }
 
 #four {
   width: 70%;
-  animation: four 5s ease-in-out infinite alternate;
+  animation: four 2s ease-in-out infinite alternate;
 }
 
 #five {
   width: 60%;
-  animation: five 4s ease-in-out infinite alternate;
+  animation: five 1s ease-in-out infinite alternate;
 }
 
 @keyframes one {
-  from { box-shadow: 0 0 250px 20px #473C78; }
-  to { box-shadow: 0 0 100px 15px #F72A3B; }
+  from { box-shadow: 0 0 250px 20px rgba(71, 60, 120, 0.8); }
+  to { box-shadow: 0 0 100px 15px rgba(247, 42, 59, 0.8); }
 }
 
 @keyframes two {
-  from { box-shadow: 0 0 250px 20px #18C499; }
-  to { box-shadow: 0 0 100px 15px #D8F05E; }
+  from { box-shadow: 0 0 250px 20px rgba(24, 196, 153, 0.8); }
+  to { box-shadow: 0 0 100px 15px rgba(216, 240, 94, 0.8); }
 }
 
 @keyframes three {
-  from { box-shadow: 0 0 250px 20px #FFDD00; }
-  to { box-shadow: 0 0 100px 15px #3E33FF; }
+  from { box-shadow: 0 0 250px 20px rgba(255, 221, 0, 0.8); }
+  to { box-shadow: 0 0 100px 15px rgba(62, 51, 255, 0.8); }
 }
 
 @keyframes four {
-  from { box-shadow: 0 0 250px 20px #781848; }
-  to { box-shadow: 0 0 100px 15px #F2BBE9; }
+  from { box-shadow: 0 0 250px 20px rgba(120, 24, 72, 0.8); }
+  to { box-shadow: 0 0 100px 15px rgba(242, 187, 233, 0.8); }
 }
 
 @keyframes five {
-  from { box-shadow: 0 0 250px 20px #42F2A1; }
-  to { box-shadow: 0 0 100px 15px #F4F6AD; }
+  from { box-shadow: 0 0 250px 20px rgba(66, 242, 161, 0.8); }
+  to { box-shadow: 0 0 100px 15px rgba(244, 246, 173, 0.8); }
 }
