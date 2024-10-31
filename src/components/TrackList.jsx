@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useToast } from "@/components/ui/use-toast";
 
 const TrackList = () => {
+  const { toast } = useToast();
+  const iframeRefs = useRef([]);
+
   const tracks = [
     {
       title: "Vera Cruz",
@@ -21,6 +25,37 @@ const TrackList = () => {
     }
   ];
 
+  useEffect(() => {
+    // Initialize SoundCloud Widget API
+    const script = document.createElement("script");
+    script.src = "https://w.soundcloud.com/player/api.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      iframeRefs.current.forEach((iframe, index) => {
+        if (iframe) {
+          try {
+            const widget = window.SC.Widget(iframe);
+            widget.bind(window.SC.Widget.Events.ERROR, () => {
+              toast({
+                title: "Error",
+                description: `Failed to load track: ${tracks[index].title}`,
+                variant: "destructive",
+              });
+            });
+          } catch (error) {
+            console.error('Error initializing SoundCloud widget:', error);
+          }
+        }
+      });
+    };
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <div className="grid gap-4 p-4">
       {tracks.map((track, index) => (
@@ -31,6 +66,7 @@ const TrackList = () => {
           <CardContent className="p-4">
             <div className="w-full">
               <iframe
+                ref={el => iframeRefs.current[index] = el}
                 width="100%"
                 height="166"
                 scrolling="no"
