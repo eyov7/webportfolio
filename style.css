@@ -12,10 +12,10 @@ body {
   color: #fff;
   background: #e7c4d8 url('public/bg.png') center/cover fixed;
   text-shadow: 
-    -2px -2px 2px rgba(0, 0, 0, 0.8),
-    2px -2px 2px rgba(0, 0, 0, 0.8),
-    -2px 2px 2px rgba(0, 0, 0, 0.8),
-    2px 2px 2px rgba(0, 0, 0, 0.8);
+    -1.5px -1.5px 2px rgba(0, 0, 0, 0.8),
+    1.5px -1.5px 2px rgba(0, 0, 0, 0.8),
+    -1.5px 1.5px 2px rgba(0, 0, 0, 0.8),
+    1.5px 1.5px 2px rgba(0, 0, 0, 0.8);
 }
 
 /* Navigation */
@@ -54,10 +54,10 @@ nav ul li a {
     inset 0 -1px 1px rgba(0,0,0,0.1);
   backdrop-filter: blur(12px);
   text-shadow: 
-    -2px -2px 2px rgba(0, 0, 0, 0.8),
-    2px -2px 2px rgba(0, 0, 0, 0.8),
-    -2px 2px 2px rgba(0, 0, 0, 0.8),
-    2px 2px 2px rgba(0, 0, 0, 0.8);
+    -1.5px -1.5px 2px rgba(0, 0, 0, 0.8),
+    1.5px -1.5px 2px rgba(0, 0, 0, 0.8),
+    -1.5px 1.5px 2px rgba(0, 0, 0, 0.8),
+    1.5px 1.5px 2px rgba(0, 0, 0, 0.8);
 }
 
 .resume-button {
@@ -68,10 +68,10 @@ nav ul li a {
   text-decoration: none;
   transition: all 0.3s ease;
   text-shadow: 
-    -2px -2px 2px rgba(0, 0, 0, 0.8),
-    2px -2px 2px rgba(0, 0, 0, 0.8),
-    -2px 2px 2px rgba(0, 0, 0, 0.8),
-    2px 2px 2px rgba(0, 0, 0, 0.8);
+    -1.5px -1.5px 2px rgba(0, 0, 0, 0.8),
+    1.5px -1.5px 2px rgba(0, 0, 0, 0.8),
+    -1.5px 1.5px 2px rgba(0, 0, 0, 0.8),
+    1.5px 1.5px 2px rgba(0, 0, 0, 0.8);
 }
 
 .resume-button:hover {
