@@ -2,9 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import TrackList from './components/TrackList';
 import Footer from './components/Footer';
-import './styles/base.css';
-import './styles/glassmorphism.css';
-import './styles/footer.css';
+import '../style.css';
 
 const trackListContainer = document.getElementById('track-list');
 if (trackListContainer) {
