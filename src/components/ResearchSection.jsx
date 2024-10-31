@@ -16,10 +16,9 @@ const ResearchSection = () => {
           <AccordionContent>
             <div className="p-4 bg-white/10 rounded-lg">
               <iframe
-                src="https://drive.google.com/file/d/1EBDUrAf-_9vkd78ckQznH-EXS4wnqpR1/preview"
+                src="/CV final presentation .pdf"
                 width="100%"
                 height="400"
-                allow="autoplay"
                 className="rounded-md"
               ></iframe>
             </div>
@@ -31,12 +30,9 @@ const ResearchSection = () => {
           <AccordionContent>
             <div className="p-4 bg-white/10 rounded-lg">
               <iframe
-                src="https://docs.google.com/presentation/d/1wc6EHC_ufz7UDcC2w9fDudTtzXiwO4S0VUHWYaUqlx0/embed?start=false&loop=false&delayms=3000"
+                src="/Lit Review for LTH.pptx"
                 width="100%"
                 height="400"
-                allowFullScreen={true}
-                mozallowfullscreen="true"
-                webkitallowfullscreen="true"
                 className="rounded-md"
               ></iframe>
             </div>
@@ -48,10 +44,9 @@ const ResearchSection = () => {
           <AccordionContent>
             <div className="p-4 bg-white/10 rounded-lg">
               <iframe
-                src="https://drive.google.com/file/d/15Cy67bJUltmxy1GBtzsCv2FKjsfdUC4d/preview"
+                src="/CV final presentation .pdf"
                 width="100%"
                 height="400"
-                allow="autoplay"
                 className="rounded-md"
               ></iframe>
             </div>
@@ -63,10 +58,9 @@ const ResearchSection = () => {
           <AccordionContent>
             <div className="p-4 bg-white/10 rounded-lg">
               <iframe
-                src="https://drive.google.com/file/d/1HF29uvqvu6HUlMUfqqCxx7J3t5hFW1BQ/preview"
+                src="/Sonic Separability.pdf"
                 width="100%"
                 height="400"
-                allow="autoplay"
                 className="rounded-md"
               ></iframe>
             </div>
