@@ -50,7 +50,7 @@ const ChatBot = () => {
   return (
     <div className="fixed bottom-4 right-4 w-96 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border rounded-lg shadow-lg">
       <div className="p-4">
-        <h3 className="font-semibold mb-4 text-black text-shadow-glow">Ask me anything about Ever!</h3>
+        <h3 className="font-bold mb-4 text-black text-shadow-glow">Ask me anything about Ever!</h3>
         <ScrollArea className="h-[300px] mb-4">
           <div className="space-y-4">
             {messages.map((message, i) => (
