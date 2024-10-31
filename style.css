@@ -240,19 +240,56 @@ details[open] .section-title {
     0 2px 4px rgba(0,0,0,0.12);
 }
 
-/* Footer */
-footer {
+/* New Footer Styles */
+.new-footer {
   text-align: center;
   padding: 1.5em;
-  font-size: 0.9em;
-  color: #24272b;
   background: rgba(224,222,238, 0.4);
-  border-top: 1px solid #999;
   border-radius: 5px;
-  box-shadow: 
-    inset 0px 1px 3px rgba(0, 0, 0, 0.2),
-    0 0 40px 0 lightgray inset;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(12px);
+}
+
+.new-footer ul {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+  justify-items: center;
+  margin: auto;
+  list-style: none;
+}
+
+.new-footer a {
+  color: var(--darkblue);
+  text-decoration: none;
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  transition: all 0.3s ease;
+}
+
+.new-footer a:hover {
+  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  transform: translateY(-2px);
+}
+
+.new-footer li:last-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.new-footer li:hover ~ li p {
+  animation: wave-animation 0.3s infinite;
+}
+
+@keyframes wave-animation {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  75% { transform: rotate(-15deg); }
+}
+
+@media (min-width: 500px) {
+  .new-footer ul {
+    grid-auto-flow: column;
+  }
 }
 
 /* Responsive Design */
@@ -271,3 +308,4 @@ footer {
     text-align: center;
   }
 }
+
