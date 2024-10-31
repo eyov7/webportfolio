@@ -180,7 +180,12 @@ details {
   margin-bottom: 1rem;
   box-shadow: 0 0 6px #9999 inset;
   backdrop-filter: blur(12px);
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 30px rgba(79, 115, 150, 0.6),
+    0 0 40px rgba(79, 115, 150, 0.4);
 }
 
 .section-title:hover {
