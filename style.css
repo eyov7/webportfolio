@@ -238,10 +238,10 @@ details[open] .section-title {
 .new-footer {
   text-align: center;
   padding: 1.5em;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(224,222,238, 0.4);
   border-radius: 5px;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .new-footer ul {
