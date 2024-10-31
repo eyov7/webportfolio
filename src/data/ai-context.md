@@ -37,10 +37,10 @@
 2. Open source music citation standard
 3. Boba business web/mobile development
 4. Music Production Portfolio:
-   - "Vera Cruz"
-   - "Broken Club"
-   - "Less is More"
-   - "A Whole Lotta Gremlin"
+   - "Vera Cruz" - Available at soundcloud.com/everardo-olivares/vera-cruz-m4a
+   - "Broken Club" - Available at soundcloud.com/eyov5/broken-club-draft
+   - "Less is More" - Available at soundcloud.com/eyov5/less-cap-draft
+   - "A Whole Lotta Gremlin" - Available at soundcloud.com/eyov5/a-whole-lotta-gremlin-draft
 
 ## Professional Experience
 - Insurance Agent (P&C License - TX & MI)
