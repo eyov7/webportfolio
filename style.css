@@ -1,3 +1,4 @@
+/* Base styles */
 :root {
   --lightblue: rgb(210,219,221);
   --lightpurple: rgb(215,190,210);
@@ -68,6 +69,22 @@ header {
     0 0 30px rgba(255, 255, 255, 0.6),
     0 0 40px rgba(79, 115, 150, 0.4);
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+.shadow-glow {
+  box-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(79, 115, 150, 0.4);
+}
+
+.shadow-glow-sm {
+  box-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(79, 115, 150, 0.3);
+}
+
+.shadow-soft {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Navigation */
@@ -184,7 +201,7 @@ details {
   text-shadow: 
     0 0 10px rgba(255, 255, 255, 0.8),
     0 0 20px rgba(255, 255, 255, 0.8),
-    0 0 30px rgba(79, 115, 150, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.6),
     0 0 40px rgba(79, 115, 150, 0.4);
 }
 
@@ -318,4 +335,3 @@ details[open] .section-title {
     text-align: center;
   }
 }
-
