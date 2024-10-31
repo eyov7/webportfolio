@@ -12,7 +12,6 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-white no-underline hover:shadow-[inset_0_-1.2em_0_hsla(0,0%,100%,0.4)] shadow-[inset_0_-1px_0_hsla(0,0%,100%,0.4)] transition-shadow duration-300"
             >
-              <img src="https://img.icons8.com/3d-fluency/94/github-logo.png" alt="GitHub" className="w-6 h-6 inline mr-2" />
               GitHub
             </a>
           </li>
@@ -23,7 +22,6 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-white no-underline hover:shadow-[inset_0_-1.2em_0_hsla(0,0%,100%,0.4)] shadow-[inset_0_-1px_0_hsla(0,0%,100%,0.4)] transition-shadow duration-300"
             >
-              <img src="https://img.icons8.com/3d-plastilina/69/linkedin--v2.png" alt="LinkedIn" className="w-6 h-6 inline mr-2" />
               LinkedIn
             </a>
           </li>
@@ -34,7 +32,6 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-white no-underline hover:shadow-[inset_0_-1.2em_0_hsla(0,0%,100%,0.4)] shadow-[inset_0_-1px_0_hsla(0,0%,100%,0.4)] transition-shadow duration-300"
             >
-              <img src="https://img.icons8.com/3d-fluency/94/soundcloud.png" alt="SoundCloud" className="w-6 h-6 inline mr-2" />
               SoundCloud
             </a>
           </li>
