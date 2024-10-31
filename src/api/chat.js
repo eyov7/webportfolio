@@ -1,6 +1,4 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
-import fs from 'fs';
-import path from 'path';
+import Groq from "groq";
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
@@ -8,33 +6,36 @@ export default async function handler(req, res) {
   }
 
   try {
-    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" });
-
-    // Read the context from the public folder
-    const contextPath = path.join(process.cwd(), 'public/webportfolio context.md');
-    const context = fs.readFileSync(contextPath, 'utf8');
-
-    const chat = model.startChat({
-      history: [],
-      generationConfig: {
-        maxOutputTokens: 1000,
-        temperature: 0.7,
-        topP: 0.8,
-        topK: 40,
-      },
+    const groq = new Groq({
+      apiKey: process.env.GROQ_API_KEY,
     });
 
-    const prompt = `You are an AI assistant representing Ever Olivares. Use this context to inform your responses:
+    const context = `You are an AI assistant for Ever Olivares. You have access to his portfolio website content and should answer questions about his background, skills, and projects. Be professional but friendly. Here's some information about Ever:
+    
+    Current role: Machine Learning and AI graduate student
+    Background: Applied Mathematics
+    Key skills: Machine Learning, AI, Full-stack Development, Audio Engineering
+    Projects: Working on savings app prototype, open source music citation standard, and boba business web/mobile development`;
 
-${context}
+    const chatCompletion = await groq.chat.completions.create({
+      messages: [
+        {
+          role: "system",
+          content: context,
+        },
+        {
+          role: "user",
+          content: req.body.message,
+        },
+      ],
+      model: "mixtral-8x7b-32768",
+      temperature: 0.7,
+      max_tokens: 1000,
+    });
 
-Please respond in a professional yet friendly manner, drawing from the above context to provide accurate and relevant information about Ever Olivares.
-
-User question: ${req.body.message}`;
-
-    const result = await chat.sendMessage(prompt);
-    return res.status(200).json({ response: result.response.text() });
+    return res.status(200).json({ 
+      response: chatCompletion.choices[0].message.content 
+    });
   } catch (error) {
     console.error('Error:', error);
     return res.status(500).json({ message: 'Internal server error' });
