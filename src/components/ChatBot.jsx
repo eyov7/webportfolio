@@ -63,8 +63,8 @@ const ChatBot = () => {
                 <div
                   className={`max-w-[80%] rounded-lg p-3 ${
                     message.role === 'user'
-                      ? 'bg-primary text-primary-foreground shadow-glow'
-                      : 'bg-muted text-foreground shadow-soft'
+                      ? 'bg-primary text-primary-foreground shadow-glow text-shadow-glow'
+                      : 'bg-muted text-foreground shadow-soft text-shadow-glow'
                   }`}
                 >
                   {message.content}
@@ -79,9 +79,9 @@ const ChatBot = () => {
             onChange={(e) => setInput(e.target.value)}
             placeholder="Type your message..."
             disabled={isLoading}
-            className="border-primary/50 focus:border-primary"
+            className="border-primary/50 focus:border-primary text-shadow-glow"
           />
-          <Button type="submit" disabled={isLoading} className="shadow-glow-sm">
+          <Button type="submit" disabled={isLoading} className="shadow-glow-sm text-shadow-glow">
             Send
           </Button>
         </form>

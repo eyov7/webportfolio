@@ -62,30 +62,7 @@ header {
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
 }
 
-.text-shadow-glow {
-  text-shadow: 
-    0 0 10px rgba(255, 255, 255, 0.8),
-    0 0 20px rgba(255, 255, 255, 0.8),
-    0 0 30px rgba(255, 255, 255, 0.6),
-    0 0 40px rgba(79, 115, 150, 0.4);
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
-}
-
-.shadow-glow {
-  box-shadow: 
-    0 0 10px rgba(255, 255, 255, 0.8),
-    0 0 20px rgba(79, 115, 150, 0.4);
-}
-
-.shadow-glow-sm {
-  box-shadow: 
-    0 0 5px rgba(255, 255, 255, 0.6),
-    0 0 10px rgba(79, 115, 150, 0.3);
-}
-
-.shadow-soft {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+/* Shadow and glow effects moved to src/styles/chat.css */
 
 /* Navigation */
 nav ul {
