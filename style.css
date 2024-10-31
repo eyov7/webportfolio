@@ -164,6 +164,34 @@ p {
   color: #2F3A3F;
 }
 
+/* Collapsible Sections */
+details {
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  font-family: 'Verdana', 'Arial', sans-serif;
+  font-size: 1.5em;
+  color: var(--darkblue);
+  padding: 1em;
+  background: rgba(224,222,238, 0.4);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 6px #9999 inset;
+  backdrop-filter: blur(12px);
+  transition: background-color 0.3s ease;
+}
+
+.section-title:hover {
+  background: rgba(224,222,238, 0.6);
+}
+
+details[open] .section-title {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #999;
+}
+
 /* PDF Container */
 .pdf-container {
   background: rgba(255, 255, 255, 0.9);
@@ -238,4 +266,3 @@ footer {
     text-align: center;
   }
 }
-
