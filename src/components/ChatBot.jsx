@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { ScrollArea } from "./ui/scroll-area";
 import { useToast } from "./ui/use-toast";
+import '../styles/chat.css';
 
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
@@ -48,7 +49,10 @@ const ChatBot = () => {
   return (
     <div className="fixed bottom-4 right-4 w-96 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border rounded-lg shadow-lg">
       <div className="p-4">
-        <h3 className="font-bold mb-4 text-black text-shadow-glow">Ask me anything about Ever!</h3>
+        <h3 className="font-bold mb-2 text-black text-shadow-glow">Ask me anything about Ever!</h3>
+        <p className="text-sm text-gray-600 mb-4">
+          Powered by Google's Gemini 1.5 Pro. This AI assistant has access to the content of this website plus additional personal context to provide accurate information about Ever's background and work.
+        </p>
         <ScrollArea className="h-[300px] mb-4">
           <div className="space-y-4">
             {messages.map((message, i) => (
