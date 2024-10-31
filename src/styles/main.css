@@ -15,16 +15,6 @@ body {
   line-height: 1.8;
 }
 
-.font-verdana {
-  font-family: 'Verdana', 'Geneva', sans-serif;
-  color: var(--text-color);
-}
-
-.font-helvetica {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: var(--text-color);
-}
-
 /* Layout */
 .wrapper {
   max-width: 1000px;
@@ -36,7 +26,7 @@ body {
 
 /* Components */
 .box {
-  background: rgba(205,203,212,0.2);
+  background: rgba(205,203,212,0.15);
   padding: 2em;
   border-radius: 5px;
   box-shadow: 0 0 6px #9999 inset;
@@ -58,6 +48,11 @@ body {
   box-shadow: 0 0 6px #9999 inset;
   backdrop-filter: blur(12px);
   transition: all 0.3s ease;
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 255, 255, 0.7),
+    0 0 30px rgba(255, 255, 255, 0.5),
+    0 0 40px rgba(79, 115, 150, 0.3);
 }
 
 /* Effects */
