@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4ever20</title>
+  <script type="module" crossorigin src="/assets/index-CXWUgcQG.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CfaTTBjG.css">
+</head>
+<body>
+  <div class="wrapper">
+    <details open>
+      <summary class="section-title">Welcome to My Digital Portfolio</summary>
+      <section id="about" class="box">
+        <h2 class="text-shadow-glow">Welcome to My Digital Portfolio</h2>
+        
+        <ul class="list-disc pl-6 space-y-6 font-verdana text-xl text-black text-shadow-glow">
+          <li>Hi! I'm currently pursuing my master's degree in Machine Learning and AI, exploring the intersection of technology and creativity. This space is where I share my musical journey alongside my academic pursuits. With a strong foundation in Applied Mathematics, focusing on Science and Engineering, I've developed the technical expertise needed for the AI industry. This background complements my current studies in artificial intelligence perfectly.</li>
+          
+          <li>On the musical side, I'm diving deep into house music arrangement while building upon my experience in reggaeton production. You'll find me crafting beats in either Ableton or Logic Pro, my go-to Digital Audio Workstations.</li>
+        </ul>
+        
+        <div class="video-container">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/wawMjJUCMVw?start=28&end=88"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </details>
+
+    <details>
+      <summary class="section-title">AI/ML Research Work</summary>
+      <section id="ai-ml" class="box">
+        <h2 class="text-shadow-glow mb-6">AI/ML Research Work</h2>
+        <Accordion type="single" collapsible defaultValue="item-1">
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="text-lg font-semibold">Video Presentation</AccordionTrigger>
+            <AccordionContent>
+              <div className="p-4 bg-white/10 rounded-lg">
+                <iframe
+                  src="https://drive.google.com/file/d/1EBDUrAf-_9vkd78ckQznH-EXS4wnqpR1/preview"
+                  width="100%"
+                  height="400"
+                  allow="autoplay"
+                  className="rounded-md"
+                ></iframe>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-2">
+            <AccordionTrigger className="text-lg font-semibold">Literature Review Slides</AccordionTrigger>
+            <AccordionContent>
+              <div className="p-4 bg-white/10 rounded-lg">
+                <iframe
+                  src="https://docs.google.com/presentation/d/1wc6EHC_ufz7UDcC2w9fDudTtzXiwO4S0VUHWYaUqlx0/embed?start=false&loop=false&delayms=3000"
+                  width="100%"
+                  height="400"
+                  allowFullScreen={true}
+                  mozallowfullscreen="true"
+                  webkitallowfullscreen="true"
+                  className="rounded-md"
+                ></iframe>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-3">
+            <AccordionTrigger className="text-lg font-semibold">Additional Research Presentation 1</AccordionTrigger>
+            <AccordionContent>
+              <div className="p-4 bg-white/10 rounded-lg">
+                <iframe
+                  src="https://drive.google.com/file/d/15Cy67bJUltmxy1GBtzsCv2FKjsfdUC4d/preview"
+                  width="100%"
+                  height="400"
+                  allow="autoplay"
+                  className="rounded-md"
+                ></iframe>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-4">
+            <AccordionTrigger className="text-lg font-semibold">Additional Research Presentation 2</AccordionTrigger>
+            <AccordionContent>
+              <div className="p-4 bg-white/10 rounded-lg">
+                <iframe
+                  src="https://drive.google.com/file/d/1HF29uvqvu6HUlMUfqqCxx7J3t5hFW1BQ/preview"
+                  width="100%"
+                  height="400"
+                  allow="autoplay"
+                  className="rounded-md"
+                ></iframe>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      </section>
+    </details>
+
+    <details>
+      <summary class="section-title">My Resume</summary>
+      <section id="resume" class="box">
+        <h2 class="text-shadow-glow">My Resume</h2>
+        <div class="pdf-container">
+          <object
+            data="/OctResume2024.docx.pdf"
+            type="application/pdf"
+            width="100%"
+            height="600px"
+          >
+            <p>Unable to display PDF file. <a href="/OctResume2024.docx.pdf" target="_blank" class="text-white">Download Instead</a></p>
+          </object>
+        </div>
+        <div id="resume-download" class="flex justify-center items-center p-4">
+          <a href="/OctResume2024.docx.pdf" target="_blank" class="resume-button text-white hover:text-white">
+            Download Resume
+          </a>
+        </div>
+      </section>
+    </details>
+
+    <details>
+      <summary class="section-title">Featured Tracks</summary>
+      <section id="music" class="box">
+        <h2 class="text-shadow-glow">Featured Tracks</h2>
+        <div id="track-list" class="w-full"></div>
+      </section>
+    </details>
+    
+    <div id="chat-bot"></div>
+    <div id="social-links"></div>
+  </div>
+</body>
+</html>
