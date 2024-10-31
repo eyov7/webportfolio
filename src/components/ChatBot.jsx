@@ -20,13 +20,15 @@ const ChatBot = () => {
     setIsLoading(true);
 
     try {
-      console.log('Sending message:', input);
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message: input }),
+        body: JSON.stringify({ 
+          message: input,
+          context: true // This flag tells the API to use the context
+        }),
       });
 
       if (!response.ok) {
@@ -34,7 +36,6 @@ const ChatBot = () => {
       }
 
       const data = await response.json();
-      console.log('Received response:', data);
       
       if (data.error) {
         throw new Error(data.error);
@@ -49,7 +50,7 @@ const ChatBot = () => {
       console.error('Chat error:', error);
       toast({
         title: "Error",
-        description: error.message || "Failed to get response from the chatbot",
+        description: "Failed to get response from the chatbot. Please try again.",
         variant: "destructive",
       });
     } finally {

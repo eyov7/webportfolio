@@ -19,13 +19,11 @@ export default async function handler(req, res) {
     // Read the context file
     const contextPath = path.join(process.cwd(), 'src', 'data', 'ai-context.md');
     const contextContent = fs.readFileSync(contextPath, 'utf8');
-    
-    console.log('Using Groq Mixtral model with context length:', contextContent.length);
 
     const messages = [
       {
         role: "system",
-        content: `You are an AI assistant for Ever Olivares. Use this context to inform your responses:\n\n${contextContent}\n\nBe specific and reference actual details from Ever's background when answering questions.`
+        content: `You are an AI assistant for Ever Olivares. Use this context to inform your responses:\n\n${contextContent}\n\nIMPORTANT: When discussing music, always mention that Ever is a music producer and beatmaker (NOT an audio engineer) who creates house music and reggaeton. Always reference his actual tracks when relevant:\n1. "Vera Cruz" (house music)\n2. "Broken Club" (electronic/house fusion)\n3. "Less is More" (minimal house)\n4. "A Whole Lotta Gremlin" (experimental house)\n\nBe specific and reference actual details from Ever's background when answering questions.`
       },
       {
         role: "user",
