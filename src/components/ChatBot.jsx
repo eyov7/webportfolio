@@ -4,16 +4,6 @@ import { Input } from "./ui/input";
 import { ScrollArea } from "./ui/scroll-area";
 import { useToast } from "./ui/use-toast";
 
-const PERSONAL_CONTEXT = `
-I'm a Machine Learning and AI graduate student with a background in Applied Mathematics. 
-Currently working on:
-- A savings app prototype
-- Open source music citation standard
-- Boba business web/mobile development
-I produce music (house and reggaeton) using Ableton and Logic Pro.
-I'm passionate about combining technology with creativity.
-`;
-
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
@@ -48,7 +38,7 @@ const ChatBot = () => {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 w-96 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border rounded-lg shadow-lg">
+    <div className="w-full max-w-2xl mx-auto bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border rounded-lg shadow-lg">
       <div className="p-4">
         <h3 className="font-semibold mb-4 text-primary text-shadow-glow">Ask me anything about Ever!</h3>
         <ScrollArea className="h-[300px] mb-4">
@@ -88,29 +78,6 @@ const ChatBot = () => {
       </div>
     </div>
   );
-};
-
-// Simple response generation based on keywords
-const generateResponse = (input, context) => {
-  const lowercaseInput = input.toLowerCase();
-  
-  if (lowercaseInput.includes('background') || lowercaseInput.includes('education')) {
-    return "I'm a Machine Learning and AI graduate student with a background in Applied Mathematics.";
-  }
-  
-  if (lowercaseInput.includes('project') || lowercaseInput.includes('working on')) {
-    return "I'm currently working on several projects: a savings app prototype, an open source music citation standard, and web/mobile development for a boba business.";
-  }
-  
-  if (lowercaseInput.includes('music') || lowercaseInput.includes('produce')) {
-    return "I produce house music and reggaeton using Ableton and Logic Pro. I love combining technology with creativity!";
-  }
-  
-  if (lowercaseInput.includes('skill') || lowercaseInput.includes('technology')) {
-    return "My skills include Machine Learning, AI, Applied Mathematics, Full-stack Development, and Audio Engineering.";
-  }
-  
-  return "I'm Ever's AI assistant. You can ask me about his background, projects, skills, or music production work!";
 };
 
 export default ChatBot;
