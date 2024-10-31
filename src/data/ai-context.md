@@ -5,7 +5,7 @@
 - Native bilingual proficiency in English and Spanish
 - Overcame significant socioeconomic challenges through academic excellence
 - Deep commitment to community upliftment and educational access
-- Passionate about using technology and creativity as tools for social mobility
+- Passionate about using technology and education as tools for social mobility
 
 ## Music Production Career
 IMPORTANT: Ever is NOT an audio engineer. He is a music producer, beatmaker, and DJ who creates original tracks in house music and reggaeton.
