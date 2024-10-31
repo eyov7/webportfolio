@@ -1,34 +1,39 @@
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
   margin-top: 1rem;
 }
 
-.social-link {
-  font-family: 'Verdana', 'Arial', sans-serif;
-  font-size: 0.9rem;
+.social-links ul {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+  justify-items: center;
+  margin: auto;
+}
+
+@media (min-width: 500px) {
+  .social-links ul {
+    grid-auto-flow: column;
+  }
+}
+
+.social-links a {
+  color: white;
   text-decoration: none;
-  color: var(--darkblue);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
 }
 
-.social-link:hover {
-  background: rgba(255, 255, 255, 0.4);
-  transform: translateY(-2px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.social-links a:hover {
+  box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
 }
 
-.wave-emoji {
-  font-size: 1.2rem;
+.social-links li:last-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
-li:hover ~ li .wave-emoji {
+.social-links li:hover ~ li p {
   animation: wave-animation 0.3s infinite;
 }
 
@@ -36,15 +41,4 @@ li:hover ~ li .wave-emoji {
   0%, 100% { transform: rotate(0deg); }
   25% { transform: rotate(20deg); }
   75% { transform: rotate(-15deg); }
-}
-
-@media (max-width: 768px) {
-  .social-links {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .social-link {
-    width: 80%;
-  }
 }
