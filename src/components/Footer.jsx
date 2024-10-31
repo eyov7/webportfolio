@@ -39,7 +39,6 @@ const Footer = () => {
             <p className="text-2xl m-0">👋</p>
           </li>
         </ul>
-        <p className="text-center text-white/80 mt-4">&copy; 2024 4ever20 | Created with 💜</p>
       </div>
     </footer>
   );
