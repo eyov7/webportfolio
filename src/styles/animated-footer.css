@@ -3,7 +3,6 @@
   width: 100%;
   height: 200px;
   margin-top: 2rem;
-  background: transparent;
 }
 
 #wrap {
@@ -29,10 +28,6 @@
   font-family: 'Verdana', 'Arial', sans-serif;
   font-size: 1rem;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(8px);
-  background: rgba(255, 255, 255, 0.1);
-  padding: 0.5rem;
-  border-radius: 8px;
 }
 
 section {
@@ -41,7 +36,6 @@ section {
   width: 100%;
   position: relative;
   margin: auto;
-  opacity: 0.8;
 }
 
 #one {
@@ -69,26 +63,26 @@ section {
 }
 
 @keyframes one {
-  from { box-shadow: 0 0 250px 20px rgba(71, 60, 120, 0.8); }
-  to { box-shadow: 0 0 100px 15px rgba(247, 42, 59, 0.8); }
+  from { box-shadow: 0 0 250px 20px #473C78; }
+  to { box-shadow: 0 0 100px 15px #F72A3B; }
 }
 
 @keyframes two {
-  from { box-shadow: 0 0 250px 20px rgba(24, 196, 153, 0.8); }
-  to { box-shadow: 0 0 100px 15px rgba(216, 240, 94, 0.8); }
+  from { box-shadow: 0 0 250px 20px #18C499; }
+  to { box-shadow: 0 0 100px 15px #D8F05E; }
 }
 
 @keyframes three {
-  from { box-shadow: 0 0 250px 20px rgba(255, 221, 0, 0.8); }
-  to { box-shadow: 0 0 100px 15px rgba(62, 51, 255, 0.8); }
+  from { box-shadow: 0 0 250px 20px #FFDD00; }
+  to { box-shadow: 0 0 100px 15px #3E33FF; }
 }
 
 @keyframes four {
-  from { box-shadow: 0 0 250px 20px rgba(120, 24, 72, 0.8); }
-  to { box-shadow: 0 0 100px 15px rgba(242, 187, 233, 0.8); }
+  from { box-shadow: 0 0 250px 20px #781848; }
+  to { box-shadow: 0 0 100px 15px #F2BBE9; }
 }
 
 @keyframes five {
-  from { box-shadow: 0 0 250px 20px rgba(66, 242, 161, 0.8); }
-  to { box-shadow: 0 0 100px 15px rgba(244, 246, 173, 0.8); }
+  from { box-shadow: 0 0 250px 20px #42F2A1; }
+  to { box-shadow: 0 0 100px 15px #F4F6AD; }
 }

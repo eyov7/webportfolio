@@ -19,7 +19,6 @@ body {
   background: #e7c4d8 url('public/bg.png') center/cover fixed;
   padding: 20px;
   line-height: 1.8;
-  filter: grayscale(100%);
 }
 
 .font-verdana {

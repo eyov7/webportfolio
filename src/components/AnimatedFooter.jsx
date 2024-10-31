@@ -12,7 +12,7 @@ const AnimatedFooter = () => {
                 <section id="four">
                   <section id="five">
                     <div className="footer-content">
-                      Created with ❤️‍🔥
+                      Created with 💜
                     </div>
                   </section>
                 </section>
