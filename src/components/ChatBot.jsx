@@ -48,7 +48,10 @@ const ChatBot = () => {
   return (
     <div className="fixed bottom-4 right-4 w-96 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border rounded-lg shadow-lg">
       <div className="p-4">
-        <h3 className="font-bold mb-4 text-black text-shadow-glow">Ask me anything about Ever!</h3>
+        <h3 className="font-bold mb-2 text-black border-b pb-2">Ask me anything about Ever!</h3>
+        <p className="text-sm text-gray-600 mb-4 border rounded-md p-2 bg-white/50">
+          Powered by Google's Gemini 1.5 Pro. This AI assistant has access to Ever's website content and personal background to provide accurate responses.
+        </p>
         <ScrollArea className="h-[300px] mb-4">
           <div className="space-y-4">
             {messages.map((message, i) => (
@@ -61,8 +64,8 @@ const ChatBot = () => {
                 <div
                   className={`max-w-[80%] rounded-lg p-3 ${
                     message.role === 'user'
-                      ? 'bg-primary text-primary-foreground shadow-glow text-shadow-glow'
-                      : 'bg-muted text-black shadow-soft text-shadow-glow'
+                      ? 'bg-primary text-primary-foreground border border-primary/20'
+                      : 'bg-muted text-black border border-gray-200'
                   }`}
                 >
                   {message.content}
@@ -77,9 +80,9 @@ const ChatBot = () => {
             onChange={(e) => setInput(e.target.value)}
             placeholder="Type your message..."
             disabled={isLoading}
-            className="border-primary/50 focus:border-primary text-black text-shadow-glow"
+            className="border-primary/50 focus:border-primary text-black"
           />
-          <Button type="submit" disabled={isLoading} className="shadow-glow-sm text-shadow-glow">
+          <Button type="submit" disabled={isLoading} className="border border-primary/20">
             Send
           </Button>
         </form>
