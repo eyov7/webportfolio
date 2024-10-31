@@ -50,7 +50,7 @@ const ChatBot = () => {
       <div className="p-4">
         <h3 className="font-bold mb-2 text-black border-b pb-2">Ask me anything about Ever!</h3>
         <p className="text-sm text-gray-600 mb-4 border rounded-md p-2 bg-white/50">
-          Powered by Google's Gemini 1.5 Pro. This AI assistant has access to Ever's website content and personal background to provide accurate responses.
+          Powered by Groq's Mixtral model. This AI assistant has access to Ever's website content and personal background to provide accurate responses.
         </p>
         <ScrollArea className="h-[300px] mb-4">
           <div className="space-y-4">
