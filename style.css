@@ -272,16 +272,6 @@ footer {
   }
 }
 
-@keyframes wave-animation {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(20deg); }
-  75% { transform: rotate(-15deg); }
-}
-
-li:hover ~ li p {
-  animation: wave-animation 0.3s infinite;
-}
-
 /* Update wrapper to allow footer to stick to bottom */
 .wrapper {
   min-height: calc(100vh - 200px);
@@ -290,11 +280,4 @@ li:hover ~ li p {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-}
-
-/* Add responsive styles for the footer links */
-@media (min-width: 500px) {
-  footer ul {
-    grid-auto-flow: column;
-  }
 }
