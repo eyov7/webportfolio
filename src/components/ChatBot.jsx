@@ -40,7 +40,11 @@ const ChatBot = () => {
         throw new Error(data.error);
       }
 
-      setMessages(prev => [...prev, { role: 'assistant', content: data.response }]);
+      setMessages(prev => [...prev, { 
+        role: 'assistant', 
+        content: data.response,
+        timestamp: new Date().toISOString()
+      }]);
     } catch (error) {
       console.error('Chat error:', error);
       toast({
