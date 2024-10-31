@@ -17,6 +17,18 @@ Actively learning web and mobile app development to support my brother's boba (b
 - Inventory management
 - Digital menu solutions
 
+## AI/ML Research Work
+I'm actively involved in AI and Machine Learning research, with a focus on practical applications and theoretical foundations:
+
+### Literature Review & Presentations
+- Comprehensive analysis of current AI/ML methodologies and applications
+- Deep dive into neural network architectures and their implementations
+- Research on optimization techniques in machine learning
+
+View my work:
+- [Video Presentation](https://drive.google.com/file/d/1EBDUrAf-_9vkd78ckQznH-EXS4wnqpR1/view?usp=drive_link)
+- [Literature Review Slides](https://docs.google.com/presentation/d/1wc6EHC_ufz7UDcC2w9fDudTtzXiwO4S0VUHWYaUqlx0/edit?usp=drive_link)
+
 ## Portfolio Contents
 
 ### Music Production
