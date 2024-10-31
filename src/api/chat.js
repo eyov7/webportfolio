@@ -14,7 +14,16 @@ export default async function handler(req, res) {
     Current role: Machine Learning and AI graduate student
     Background: Applied Mathematics
     Key skills: Machine Learning, AI, Full-stack Development, Audio Engineering
-    Projects: Working on savings app prototype, open source music citation standard, and boba business web/mobile development`;
+    Projects: Working on savings app prototype, open source music citation standard, and boba business web/mobile development
+
+    Music Production:
+    Ever has produced several tracks including:
+    - "Vera Cruz" - Available on SoundCloud
+    - "Broken Club" - A club-focused track
+    - "Less is More" - Showcasing minimalist production style
+    - "A Whole Lotta Gremlin" - Experimental track
+    
+    He specializes in house music arrangement and reggaeton production, using both Ableton and Logic Pro as his main Digital Audio Workstations.`;
 
     const chat = model.startChat({
       history: [],
