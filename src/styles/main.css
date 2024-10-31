@@ -1,0 +1,82 @@
+/* Base styles */
+:root {
+  --text-color: #000000;
+  --lightblue: rgb(210,219,221);
+  --lightpurple: rgb(215,190,210);
+  --creme: rgb(255,254,233);
+  --darkblue: rgb(79, 115, 150);
+}
+
+/* Typography */
+body {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+.font-verdana {
+  font-family: 'Verdana', 'Geneva', sans-serif;
+  color: var(--text-color);
+}
+
+.font-helvetica {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--text-color);
+}
+
+/* Layout */
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Components */
+.box {
+  background: rgba(205,203,212,0.4);
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 0 6px #9999 inset;
+  border: #d0ced6 solid 2px;
+  overflow: auto;
+  max-height: 500px;
+  backdrop-filter: blur(12px);
+}
+
+.section-title {
+  font-family: 'Verdana', 'Arial', sans-serif;
+  font-size: 1.5em;
+  color: var(--text-color);
+  padding: 1em;
+  background: rgba(224,222,238, 0.4);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 6px #9999 inset;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+/* Effects */
+.text-shadow-glow {
+  color: var(--text-color);
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.8),
+    0 0 30px rgba(255, 255, 255, 0.6),
+    0 0 40px rgba(79, 115, 150, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .section-title {
+    font-size: 1.2em;
+  }
+}

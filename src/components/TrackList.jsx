@@ -26,7 +26,7 @@ const TrackList = () => {
       {tracks.map((track, index) => (
         <Card key={index} className="w-full bg-white shadow-lg rounded-lg overflow-hidden">
           <CardHeader className="bg-gray-50">
-            <CardTitle className="text-lg font-semibold text-gray-800 text-shadow-glow">{track.title}</CardTitle>
+            <CardTitle className="text-lg font-semibold text-black text-shadow-glow">{track.title}</CardTitle>
           </CardHeader>
           <CardContent className="p-4">
             <iframe

@@ -50,7 +50,7 @@ const ChatBot = () => {
   return (
     <div className="fixed bottom-4 right-4 w-96 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border rounded-lg shadow-lg">
       <div className="p-4">
-        <h3 className="font-semibold mb-4 text-primary text-shadow-glow">Ask me anything about Ever!</h3>
+        <h3 className="font-semibold mb-4 text-black text-shadow-glow">Ask me anything about Ever!</h3>
         <ScrollArea className="h-[300px] mb-4">
           <div className="space-y-4">
             {messages.map((message, i) => (
@@ -64,7 +64,7 @@ const ChatBot = () => {
                   className={`max-w-[80%] rounded-lg p-3 ${
                     message.role === 'user'
                       ? 'bg-primary text-primary-foreground shadow-glow text-shadow-glow'
-                      : 'bg-muted text-foreground shadow-soft text-shadow-glow'
+                      : 'bg-muted text-black shadow-soft text-shadow-glow'
                   }`}
                 >
                   {message.content}
@@ -79,7 +79,7 @@ const ChatBot = () => {
             onChange={(e) => setInput(e.target.value)}
             placeholder="Type your message..."
             disabled={isLoading}
-            className="border-primary/50 focus:border-primary text-shadow-glow"
+            className="border-primary/50 focus:border-primary text-black text-shadow-glow"
           />
           <Button type="submit" disabled={isLoading} className="shadow-glow-sm text-shadow-glow">
             Send
