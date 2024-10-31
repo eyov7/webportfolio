@@ -11,8 +11,8 @@ export default async function handler(req, res) {
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-pro-latest" });
 
-    // Read the context from the Markdown file
-    const contextPath = path.join(process.cwd(), 'src/data/ai-context.md');
+    // Read the context from the public folder
+    const contextPath = path.join(process.cwd(), 'public/webportfolio context.md');
     const context = fs.readFileSync(contextPath, 'utf8');
 
     const chat = model.startChat({
@@ -29,9 +29,9 @@ export default async function handler(req, res) {
 
 ${context}
 
-User question: ${req.body.message}
+Please respond in a professional yet friendly manner, drawing from the above context to provide accurate and relevant information about Ever Olivares.
 
-Please respond in a professional yet friendly manner, drawing from the above context to provide accurate and relevant information about Ever Olivares.`;
+User question: ${req.body.message}`;
 
     const result = await chat.sendMessage(prompt);
     return res.status(200).json({ response: result.response.text() });
