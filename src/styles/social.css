@@ -6,9 +6,6 @@
 }
 
 .social-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   font-family: 'Verdana', 'Arial', sans-serif;
   font-size: 0.9rem;
   text-decoration: none;
@@ -27,10 +24,18 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.social-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+.wave-emoji {
+  font-size: 1.2rem;
+}
+
+li:hover ~ li .wave-emoji {
+  animation: wave-animation 0.3s infinite;
+}
+
+@keyframes wave-animation {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  75% { transform: rotate(-15deg); }
 }
 
 @media (max-width: 768px) {
