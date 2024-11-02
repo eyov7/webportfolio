@@ -11,7 +11,7 @@ I'm a Machine Learning and AI graduate student with a background in Applied Math
 
 ### Current Side Projects
 1. Savings App Prototype Development
-2. Open Source Music Reference Standard
+2. Open Source Music Standard
 3. Boba Business Web/Mobile Development
 
 ### AI/ML Research Work
