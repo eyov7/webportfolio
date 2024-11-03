@@ -6,7 +6,7 @@ I'm a Machine Learning and AI graduate student with a background in Applied Math
 ## Website Contents
 
 ### Main Projects
-1. Audio/Split/Midi ML Pipeline Development
+1. Audio/Split/Midi ML Pipeline Development (DONE, AI DEMO in website)
 2. Los Alamos National Laboratory ADWP Project
 
 ### Current Side Projects
