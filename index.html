@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://huggingface.co; frame-src 'self' https://huggingface.co https://*.huggingface.co; script-src 'self' 'unsafe-inline' https://huggingface.co https://*.huggingface.co;">
   <title>4ever20</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="src/styles/social.css">
@@ -40,12 +41,12 @@
         <h2 class="text-shadow-glow">Interactive AI Demo</h2>
         <div class="video-container">
           <iframe
-            src="https://huggingface.co/spaces/eyov/Aud2Stm2Mdi/embed"
+            src="https://eyov-aud2stm2mdi.hf.space"
             width="100%"
             height="800"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+            sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation"
             loading="lazy"
             allowfullscreen
           ></iframe>
