@@ -2,40 +2,45 @@
 
 ## Personal Background & Journey
 - First-generation scholar from La Joya, Texas ("The Gem" of the Rio Grande Valley)
+- 24-year-old AI enthusiast, data science student, and researcher
 - Native bilingual proficiency in English and Spanish
 - Overcame significant socioeconomic challenges through academic excellence
 - Deep commitment to community upliftment and educational access
 - Passionate about using technology and education as tools for social mobility
 
-## Academic Achievement
+## Academic Achievement & Current Research
+- Currently studying abstract linear algebra, focusing on vector spaces and linear transformations
+- Collaborating with Los Alamos National Laboratory
+  - Working on enhancing safety protocols in nuclear device production
+  - Adapting BP Neural Network framework for modeling safety risks
+  - Focus on handling hazardous materials like plutonium
+  - Currently in literature review phase studying nuclear safety standards
+- Previous Research at MAA National Research Experience (UTRGV)
+  - Solved stochastic Burgers equation with variable coefficients
+  - Published findings in mathematical journal
 - M.S. in Applied Statistics and Data Science (Expected May 2026) - UTRGV
 - B.S. in Applied Mathematics (2020) - UTRGV
   - Graduated Summa Cum Laude with 3.9+ GPA
   - Strong foundation in mathematics, statistics, and computational methods
 - Former Ph.D. student at UT Austin's Oden Institute (2021-2022)
 
-## Research Experience
-- Current: Los Alamos National Laboratory Collaboration
-  - Focus on weapons production optimization and risk modeling
-- Previous: Lawrence Livermore National Laboratory
-  - Worked on sparse regularization and transfer learning frameworks
-- International Research: University of Oxford collaboration
-  - Specialized in sparse and low-rank regularization for robust deep networks
-- Published research on stochastic Burgers equation solutions
-
-## Technical Expertise
+## Technical Projects & Expertise
+- Building ML pipeline for audio and MIDI processing
+  - Using Meta's Demucs for stem separation
+  - Implementing Spotify's Basic Pitch for MIDI conversion
 - Programming Languages: Python, MATLAB, R, SQL, C++
 - Machine Learning & AI: PyTorch, Deep Learning, Transfer Learning
 - Data Analysis & Statistics
 - Web Development: HTML, Full-stack capabilities
-- Audio Engineering & Music Production
+- Music Production & DJing:
   - Proficient in Ableton and Logic Pro
   - House music and reggaeton production specialist
+  - Building platform for music sample sharing and citation
 
 ## Current Projects
-1. Savings application prototype development
-2. Open source music citation standard
-3. Boba business web/mobile development
+1. Music sample sharing and citation platform development
+2. ML pipeline for audio processing
+3. Nuclear safety risk modeling research
 4. Music Production Portfolio:
    - "Vera Cruz"
    - "Broken Club"
@@ -45,8 +50,18 @@
 ## Professional Experience
 - Insurance Agent (P&C License - TX & MI)
   - Demonstrated excellence in customer service (98% quality assessment)
+- Entrepreneurial ventures:
+  - Hemp products business
+  - Various innovative business combinations
 - Leadership Experience as President of Economics and Finance Society
   - Led financial literacy programs and community initiatives
+
+## Personal Philosophy & Interests
+- Balances intellectual and physical pursuits
+- Inspired by ancient Greek philosophy of holistic development
+- Seeks innovative combinations of technical skills and creative expression
+- Committed to continuous learning and growth
+- Values documentation and proper attribution in creative work
 
 ## Core Values & Mission
 - Committed to bridging educational gaps in underserved communities
