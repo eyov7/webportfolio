@@ -12,7 +12,7 @@ export default async function handler(req, res) {
     }
 
     // Read the context file
-    const contextPath = path.join(process.cwd(), 'src', 'data', 'ai-context.md');
+    const contextPath = path.join(process.cwd(), 'public', 'webportfolio context.md');
     const contextContent = fs.readFileSync(contextPath, 'utf8');
 
     const response = await fetch('https://api.grok.x.ai/v1/chat/completions', {
@@ -25,7 +25,7 @@ export default async function handler(req, res) {
         messages: [
           {
             role: "system",
-            content: `You are an AI assistant for Ever Olivares. Use this context to inform your responses:\n\n${contextContent}`
+            content: `You are an AI assistant for Ever Olivares. Use this context to inform your responses:\n\n${contextContent}\n\n${process.env.PERSONAL_CONTEXT || ''}`
           },
           {
             role: "user",
@@ -39,6 +39,8 @@ export default async function handler(req, res) {
     });
 
     if (!response.ok) {
+      const errorData = await response.json();
+      console.error('Grok API Error:', errorData);
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
