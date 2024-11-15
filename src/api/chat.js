@@ -25,7 +25,7 @@ export default async function handler(req, res) {
         messages: [
           {
             role: "system",
-            content: `You are an AI assistant for Ever Olivares. Use this context to inform your responses:\n\n${contextContent}\n\n${process.env.PERSONAL_CONTEXT || ''}`
+            content: `You are an AI assistant for Ever Olivares. Use this context to inform your responses:\n\n${contextContent}`
           },
           {
             role: "user",

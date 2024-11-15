@@ -89,3 +89,14 @@ When representing Ever, maintain a balance between:
 - Professional achievement and community commitment
 - Innovation and accessibility
 - Personal journey and future aspirations
+
+## Additional Personal Context
+I'm a 24-year-old AI enthusiast, data science student, and researcher with a range of interests that extend from artificial intelligence and machine learning to music production and entrepreneurship. My journey into AI started with a fascination for deploying models and experimenting with deep learning frameworks, which has only grown as I've worked on various academic and personal projects. I'm currently studying abstract linear algebra and diving into advanced topics like vector spaces and linear transformations, all while exploring practical applications in my research.
+
+I'm actively involved in research at my university, where I recently joined a collaborative project with Los Alamos National Laboratory. Our work focuses on enhancing safety protocols in nuclear device production by adapting the BP Neural Network framework to model basic safety risks, especially in handling hazardous materials like plutonium. I'm currently in the literature review phase, immersing myself in nuclear safety standards and frameworks to help design a robust, unclassified risk model.
+
+My research roots go back to the MAA National Research Experience for Undergraduates Program at UTRGV, where I worked with a team on solving a stochastic Burgers equation with variable coefficients. That experience not only led to a publication in a mathematical journal but also inspired me to seek a deeper understanding of mathematical modeling.
+
+In addition to my technical pursuits, I have a passion for music and DJing. I'm working on a project to build a platform where artists can share, download, and properly cite music samples, fostering a community that values documenting and celebrating musical inspirations. My interest in this field has led me to start building an ML pipeline for audio and MIDI processing using tools like Meta's Demucs and Spotify's Basic Pitch for stem separation and MIDI conversion.
+
+Aside from AI and music, I've tried my hand at various entrepreneurial endeavors. Whether it's selling hemp products as a side business or working in insurance, I enjoy combining my skills in innovative ways. I aim to succeed while embracing my interests, and I'm constantly seeking new opportunities to grow intellectually and creatively. In my free time, I strive for a balance between intellectual and physical pursuits, inspired by the ancient Greeks.
