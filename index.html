@@ -191,17 +191,29 @@
       <summary class="section-title">Projects</summary>
       <section id="projects" class="box">
         <h2 class="text-shadow-glow">Personal Projects</h2>
-        <div class="video-container mb-8">
-          <iframe
-            src="https://timey-tracker.lovable.app/"
-            width="100%"
-            height="800"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation"
-            loading="lazy"
-            allowfullscreen
-          ></iframe>
+        <div class="project-container bg-white/10 p-6 rounded-lg backdrop-blur-sm mb-8">
+          <h3 class="text-xl font-bold mb-4 text-shadow-glow">Timey Tracker</h3>
+          <p class="mb-4 text-shadow-glow">A time tracking application built with React and Lovable.</p>
+          <div class="aspect-ratio-container" style="position: relative; padding-top: 75%;">
+            <iframe
+              src="https://timey-tracker.lovable.app"
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              className="rounded-lg shadow-lg"
+            ></iframe>
+          </div>
+          <div class="mt-4">
+            <a 
+              href="https://timey-tracker.lovable.app" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-block px-4 py-2 bg-white/20 hover:bg-white/30 rounded-lg text-white text-shadow-glow transition-all"
+            >
+              Open in New Tab
+            </a>
+          </div>
         </div>
       </section>
     </details>
